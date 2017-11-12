@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="top"
-    tools:context="edu.illinois.cs465.ddc.CurrencyActivity">
+    tools:context="edu.illinois.cs465.ddc.CurrencyActivity"
+    android:background="@color/beige_lighter">
 
     <LinearLayout
         android:id="@+id/headerbar"
@@ -13,7 +14,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="left"
-        android:background="@color/colorPrimaryDark"
+        android:background="@color/beige"
         android:padding="10dp">
 
         <ImageButton

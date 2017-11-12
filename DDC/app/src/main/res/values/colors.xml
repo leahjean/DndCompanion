@@ -5,4 +5,6 @@
     <color name="colorAccent">#FF4081</color>
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
+    <color name="beige">#E5D7BB</color>
+    <color name="beige_lighter">#ffe8bc</color>
 </resources>

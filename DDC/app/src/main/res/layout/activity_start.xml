@@ -1,18 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="match_parent"
-    tools:context="edu.illinois.cs465.ddc.StartActivity">
-
+    android:layout_width="match_parent"
+    android:layout_marginLeft="40sp"
+    android:layout_marginRight="40sp"
+    android:orientation="vertical"
+    android:gravity="center">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Create A Character"
+        android:textSize="25sp"
+        android:textStyle="normal"
+        android:background="@drawable/expandable_button_background"/>
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Load Existing"
+        android:textSize="20sp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20sp"
+        android:layout_weight="2">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="top|center">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_marginTop="2.5sp"
+                android:layout_marginBottom="2.5sp"
+                android:gravity="center"
+                android:text="Character Placeholder 1"
+                android:textSize="20sp"
+                android:background="@drawable/expandable_button_background"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_marginTop="2.5sp"
+                android:layout_marginBottom="2.5sp"
+                android:gravity="center"
+                android:text="Character Placeholder 2"
+                android:textSize="20sp"
+                android:background="@drawable/expandable_button_background"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_marginTop="2.5sp"
+                android:layout_marginBottom="2.5sp"
+                android:gravity="center"
+                android:text="Character Placeholder 3"
+                android:textSize="20sp"
+                android:background="@drawable/expandable_button_background"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_marginTop="2.5sp"
+                android:layout_marginBottom="2.5sp"
+                android:gravity="center"
+                android:text="Character Placeholder 4"
+                android:textSize="20sp"
+                android:background="@drawable/expandable_button_background"/>
+        </LinearLayout>
 
-</android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+</LinearLayout>
