@@ -36,11 +36,13 @@
         android:layout_marginLeft="50dp"
         android:layout_marginTop="20dp">
 
-        <Button
+        <ImageButton
             android:id="@+id/goldCoin"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:background="@drawable/gold_circle"/>
+            android:background="@drawable/gold_circle"
+            android:foreground="@drawable/new_coin_button"
+            />
 
         <TextView style="@style/CurrencyText"
             android:id="@+id/goldText"
@@ -82,7 +84,8 @@
             android:id="@+id/silverCoin"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:background="@drawable/silver_circle"/>
+            android:background="@drawable/silver_circle"
+            android:foreground="@drawable/new_coin_button"/>
 
         <TextView style="@style/CurrencyText"
             android:id="@+id/silverText"
@@ -124,7 +127,8 @@
             android:id="@+id/bronzeCoin"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:background="@drawable/bronze_circle"/>
+            android:background="@drawable/bronze_circle"
+            android:foreground="@drawable/new_coin_button"/>
 
         <TextView style="@style/CurrencyText"
             android:id="@+id/bronzeText"
@@ -166,7 +170,8 @@
             android:id="@+id/copperCoin"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:background="@drawable/copper_circle"/>
+            android:background="@drawable/copper_circle"
+            android:foreground="@drawable/new_coin_button"/>
 
         <TextView style="@style/CurrencyText"
             android:id="@+id/copperText"
