@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">DDC</string>
+    <string name="currency_header">Currency</string>
 </resources>

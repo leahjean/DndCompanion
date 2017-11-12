@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top"
+    tools:context="edu.illinois.cs465.ddc.CurrencyActivity">
+
+    <LinearLayout
+        android:id="@+id/headerbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="left"
+        android:background="@color/colorPrimaryDark"
+        android:padding="10dp">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_navigate_before_black_24dp"
+            android:background="@drawable/tan_button"/>
+
+        <TextView style="@style/HeaderText"
+            android:text="@string/currency_header"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/gold"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/goldCoin"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/gold_circle"/>
+
+        <TextView style="@style/CurrencyText"
+            android:id="@+id/goldText"
+            android:layout_toRightOf="@id/goldCoin"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="100dp"
+            android:text="375"/>
+
+        <Button
+            android:id="@+id/goldPlusButton"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/currency_modifier"
+            android:text="+"
+            android:textSize="30sp"
+            android:layout_toRightOf="@id/goldText"/>
+
+        <Button
+            android:id="@+id/goldMinusButton"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/currency_modifier"
+            android:text="-"
+            android:textSize="30sp"
+            android:layout_toRightOf="@id/goldPlusButton"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/silver"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:id="@+id/silverCoin"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/silver_circle"/>
+
+        <TextView style="@style/CurrencyText"
+            android:id="@+id/silverText"
+            android:layout_toRightOf="@id/silverCoin"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="100dp"
+            android:text="8"/>
+
+        <Button
+            android:id="@+id/silverPlusButton"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/currency_modifier"
+            android:text="+"
+            android:textSize="30sp"
+            android:layout_toRightOf="@id/silverText"/>
+
+        <Button
+            android:id="@+id/silverMinusButton"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/currency_modifier"
+            android:text="-"
+            android:textSize="30sp"
+            android:layout_toRightOf="@id/silverPlusButton"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bronze"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:id="@+id/bronzeCoin"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bronze_circle"/>
+
+        <TextView style="@style/CurrencyText"
+            android:id="@+id/bronzeText"
+            android:layout_toRightOf="@id/bronzeCoin"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="100dp"
+            android:text="8"/>
+
+        <Button
+            android:id="@+id/bronzePlusButton"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/currency_modifier"
+            android:text="+"
+            android:textSize="30sp"
+            android:layout_toRightOf="@id/bronzeText"/>
+
+        <Button
+            android:id="@+id/bronzeMinusButton"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/currency_modifier"
+            android:text="-"
+            android:textSize="30sp"
+            android:layout_toRightOf="@id/bronzePlusButton"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/copper"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:id="@+id/copperCoin"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/copper_circle"/>
+
+        <TextView style="@style/CurrencyText"
+            android:id="@+id/copperText"
+            android:layout_toRightOf="@id/copperCoin"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="100dp"
+            android:text="1001"/>
+
+        <Button
+            android:id="@+id/copperPlusButton"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/currency_modifier"
+            android:text="+"
+            android:textSize="30sp"
+            android:layout_toRightOf="@id/copperText"/>
+
+        <Button
+            android:id="@+id/copperMinusButton"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/currency_modifier"
+            android:text="-"
+            android:textSize="30sp"
+            android:layout_toRightOf="@id/copperPlusButton"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/newCurrency"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:id="@+id/newCoin"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="+"
+            android:textSize="50sp"
+            android:background="@drawable/new_coin_button"/>
+
+        <TextView style="@style/CurrencyText"
+            android:id="@+id/newText"
+            android:layout_toRightOf="@id/newCoin"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="100dp"
+            android:text="NEW"/>
+    </RelativeLayout>
+</LinearLayout>
