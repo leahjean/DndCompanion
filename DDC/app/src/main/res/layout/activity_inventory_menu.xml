@@ -19,7 +19,7 @@
             android:background="@drawable/tan_button"/>
 
         <TextView style="@style/HeaderText"
-            android:text="@string/currency_header"
+            android:text="Equipment"
             android:background="@color/beige_lighter"
             android:layout_gravity="center"
             android:layout_marginLeft="10dp"/>
@@ -29,9 +29,14 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="●"/>
 
         <Button
             android:layout_width="match_parent"
@@ -50,31 +55,59 @@
 
     </LinearLayout>
 
-
-    <Button
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
-        android:paddingLeft="10dp"
-        android:drawableLeft="@mipmap/ic_launcher"
-        android:background="@drawable/expandable_button_background"
-        android:text="Supplies"
-        android:textSize="30sp"/>
+        android:orientation="horizontal">
 
-    <Button
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="●"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="10dp"
+            android:drawableLeft="@mipmap/ic_launcher"
+            android:background="@drawable/expandable_button_background"
+            android:text="Supplies"
+            android:textSize="30sp"/>
+
+    </LinearLayout>
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
-        android:paddingLeft="10dp"
-        android:drawableLeft="@mipmap/ic_launcher"
-        android:background="@drawable/expandable_button_background"
-        android:text="Currency"
-        android:textSize="30sp"/>
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="●"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="10dp"
+            android:drawableLeft="@mipmap/ic_launcher"
+            android:background="@drawable/expandable_button_background"
+            android:text="Currency"
+            android:textSize="30sp"/>
+
+    </LinearLayout>
+
 </LinearLayout>
