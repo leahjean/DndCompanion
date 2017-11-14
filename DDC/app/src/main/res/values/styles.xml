@@ -16,7 +16,7 @@
         <item name="android:background">@color/backgroundColor</item>
     </style>
 
-    <style name="class_race_next_back_btn">
+    <style name="RaceClassNextBackBtn">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:minWidth">100dp</item>
@@ -52,4 +52,8 @@
         <item name="android:textAllCaps">false</item>
     </style>
 
+    <style name="HomepageItems">
+        <item name="android:layout_marginRight">40dp</item>
+        <item name="android:layout_marginLeft">40dp</item>
+    </style>
 </resources>
