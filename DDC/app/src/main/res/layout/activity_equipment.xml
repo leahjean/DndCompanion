@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top"
+    tools:context="edu.illinois.cs465.ddc.CurrencyActivity"
+    android:background="@color/beige">
+
+    <LinearLayout
+        android:id="@+id/headerbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="left"
+        android:background="@color/beige_lighter"
+        android:padding="10dp">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_navigate_before_black_24dp"
+            android:background="@drawable/tan_button"/>
+
+        <TextView style="@style/HeaderText"
+            android:text="@string/equipment_header"
+            android:background="@color/beige_lighter"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"/>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ExpandableListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ExpandaButton">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="dfgadfgsdfgdfg"/>
+
+        </ExpandableListView>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+
+
