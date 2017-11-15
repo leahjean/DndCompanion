@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">DDC</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+    <string name="details">Details</string>
+    <string name="currency_header">Currency</string>
 </resources>
