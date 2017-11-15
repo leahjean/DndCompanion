@@ -19,36 +19,34 @@
             style="@style/class_race_image_btn"
             />
         <LinearLayout
+            android:id="@+id/race_class_desc_layout"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical">
 
-            <android.support.v4.view.ViewPager
+            <edu.illinois.cs465.ddc.WrapContentHeightViewPager
                 android:id="@+id/race_class_portrait_view_pager"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_marginTop="-20dp"
-                android:scaleX="0.85"
-                android:scaleY="0.80"
-                android:layout_weight="0.4"
-                android:gravity="center"
-                android:background="@drawable/barbarian"/>
+                android:layout_weight="0.6"
+                android:layout_marginTop="20dp"
+                android:gravity="center" />
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="-55dp"
+                android:layout_height="0dp"
                 android:textSize="30sp"
                 android:textStyle="bold"
                 android:layout_gravity="center"
-                android:text="Warrior"/>
+                android:layout_weight="0.05"
+                android:text="Barbarian"/>
 
             <Button
                 android:id="@+id/race_class_detail_btn"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:layout_marginBottom="-10dp"
+                android:layout_marginBottom="10dp"
                 style="@style/class_race_details"
                 android:text="@string/details"
                 android:background="@drawable/expandable_button_background" />
