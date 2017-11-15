@@ -4,4 +4,5 @@
     <string name="next">Next</string>
     <string name="details">Details</string>
     <string name="currency_header">Currency</string>
+    <string name="equipment_header">Equipment</string>
 </resources>
