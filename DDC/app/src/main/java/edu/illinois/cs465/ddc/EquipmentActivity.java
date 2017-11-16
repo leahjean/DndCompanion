@@ -42,10 +42,10 @@ public class EquipmentActivity extends Activity {
         daggerDesc.add("dagaggagaaga");
 
         List<String> lbDesc = new ArrayList<>();
-        daggerDesc.add("BOWWWWWwwwwww");
+        lbDesc.add("BOWWWWWwwwwww");
 
         List<String> qDesc = new ArrayList<>();
-        daggerDesc.add("KwYvVvVVvVvVRrrr");
+        qDesc.add("KwYvVvVVvVvVRrrr");
 
 
         listHash.put(listDataHeader.get(0), armorDesc);
