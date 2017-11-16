@@ -2,21 +2,24 @@ package edu.illinois.cs465.ddc;
 
 
 import android.app.Activity;
-import android.media.Image;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
-import android.util.Log;
 import android.view.View;
-import android.view.ViewGroup;
-import android.view.ViewParent;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.ImageView;
+import android.widget.TextView;
 
+import java.util.List;
+
+/**
+ * Activity handles page for selecting a race
+ */
 public class RaceSelectActivity extends Activity implements View.OnClickListener {
     ImageButton nextRaceBtn, backRaceBtn;
     Button detailBtn, backPageBtn, nextPageBtn;
     WrapContentHeightViewPager portraitViewPager;
+    TextView raceNameView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,20 +27,9 @@ public class RaceSelectActivity extends Activity implements View.OnClickListener
         setContentView(R.layout.race_class_select);
 
         initButtons();
-        initViewPager();
-    }
-
-    // Initialize view pager to allow for carousel of races
-    private void initViewPager() {
-        portraitViewPager = (WrapContentHeightViewPager) findViewById(R.id.race_class_portrait_view_pager);
-
-//        ImageView characterPortrait = (ImageView) findViewById(R.id.race_class_portrait);
-//        ViewGroup.LayoutParams params = portraitViewPager.getLayoutParams();
-//        params.height = characterPortrait.getHeight();
-//        portraitViewPager.setLayoutParams(params);
-
-        PortraitViewPageAdapter pageAdapter = new PortraitViewPageAdapter(this, "race");
-        portraitViewPager.setAdapter(pageAdapter);
+        initPortraitViewPager();
+        initRaceNameView();
+        raceNameView = (TextView) findViewById(R.id.race_class_name);
     }
 
     // Initialize button variables and button event listeners for each button on the page
@@ -58,19 +50,55 @@ public class RaceSelectActivity extends Activity implements View.OnClickListener
         nextPageBtn.setOnClickListener(this);
     }
 
+    // Initialize view pager to allow for carousel of races and add page change listener
+    private void initPortraitViewPager() {
+        portraitViewPager = (WrapContentHeightViewPager) findViewById(R.id.race_class_portrait_view_pager);
+        PortraitViewPageAdapter pageAdapter = new PortraitViewPageAdapter(this, "race");
+        portraitViewPager.setAdapter(pageAdapter);
+
+        portraitViewPager.addOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener() {
+            public void onPageSelected(int position) {
+                raceNameView.setText(getCurrentRace());
+            }
+        });
+    }
+
+    // Initialize text view displaying the current race
+    private void initRaceNameView() {
+        raceNameView = (TextView) findViewById(R.id.race_class_name);
+        raceNameView.setText(getCurrentRace());
+    }
+
+    // Get the current race name from the ViewPagerAdapter's list of filenames
+    private String getCurrentRace() {
+        PortraitViewPageAdapter portraitAdapter = (PortraitViewPageAdapter) portraitViewPager.getAdapter();
+        List<String> filenames = portraitAdapter.getImageFilenames();
+
+        int currPosition = portraitViewPager.getCurrentItem();
+        String rawFilename = filenames.get(currPosition)
+                .replace("race_", "")
+                .replace("_", " ");
+        return rawFilename.substring(0, 1).toUpperCase() + rawFilename.substring(1);
+    }
+
     @Override
     public void onClick(View v) {
         switch(v.getId()) {
-            case R.id.race_class_back_btn:
-                Log.d("Race", Integer.toString(portraitViewPager.getHeight()));
-                Log.d("Race", Integer.toString(portraitViewPager.getWidth()));
-                ImageView iView = (ImageView) findViewById(R.id.race_class_portrait);
-                Log.d("Race", "Iview " + Integer.toString(iView.getHeight()));
-                Log.d("Race", "Iview " + Integer.toString(iView.getWidth()));
+            case R.id.race_class_back_btn: {
+                CharacterCreateUtil.raceClassScrollPrevPortrait(portraitViewPager);
                 break;
-            case R.id.race_class_next_btn:
+            }
+            case R.id.race_class_next_btn: {
+                CharacterCreateUtil.raceClassScrollNextPortrait(portraitViewPager);
                 break;
+            }
             case R.id.race_class_back_page_btn:
+                this.finish();
+                break;
+            case R.id.race_class_next_page_btn:
+                Intent intent = new Intent(this, ClassSelectActivity.class);
+                intent.putExtra("Selected Race", getCurrentRace());
+                startActivity(intent);
                 break;
         }
     }

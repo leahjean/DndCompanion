@@ -34,6 +34,7 @@
                 android:gravity="center" />
 
             <TextView
+                android:id="@+id/race_class_name"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:textSize="30sp"
