@@ -8,6 +8,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import java.lang.reflect.Field;
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Page adapter handles the portrait carousel for all races and classes on the
  * character creation menus
@@ -19,6 +23,7 @@ public class PortraitViewPageAdapter extends PagerAdapter{
     private Context context;
     private LayoutInflater layoutInflater;
     private Integer [] images;
+    private List<String> imageFilenames;
 
     /**
      * Initialize the view page adapter for use with the ViewPagers displaying class and race
@@ -31,11 +36,37 @@ public class PortraitViewPageAdapter extends PagerAdapter{
     }
 
     /**
-     * Initialize the image names
-     * @param filename_prefix
+     * Initialize the image filenames that start with the given prefix
      */
     private void initImageFilenames(String filename_prefix) {
+        // Get all filenames that start with the prefix
+        Field[] drawables = R.drawable.class.getFields();
+        imageFilenames = new ArrayList<String>();
+        for (Field f : drawables) {
+            String filename = f.getName();
+            if (filename.startsWith(filename_prefix)) {
+                imageFilenames.add(filename);
+            }
+        }
 
+        // Get all drawable ids for the given files
+        List<Integer> drawableIds = new ArrayList<>();
+        for (String filename : imageFilenames) {
+            int drawableId = this.context
+                    .getResources()
+                    .getIdentifier(filename, "drawable", this.context.getPackageName());
+            drawableIds.add(drawableId);
+        }
+
+        images = drawableIds.toArray(new Integer[drawableIds.size()]);
+    }
+
+    /**
+     * Getter for the filenames
+     * @return Arraylist of filenames
+     */
+    public List<String> getImageFilenames() {
+        return imageFilenames;
     }
 
     @Override
