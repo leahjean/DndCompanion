@@ -25,6 +25,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".RaceSelectActivity" />
+        <activity android:name=".ClassSelectActivity" />
         <activity android:name=".CurrencyActivity" />
         <activity android:name=".InventoryActivity" />
         <activity android:name=".EquipmentActivity"></activity>
