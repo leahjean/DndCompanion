@@ -38,8 +38,6 @@ public class StartActivity extends Activity implements View.OnClickListener {
 
         ArcBubbleUtil.createArcBubble(this);
 
-
-
         addExistingCharacterBtn("Greg");
         addExistingCharacterBtn("Gregor");
     }
@@ -50,6 +48,12 @@ public class StartActivity extends Activity implements View.OnClickListener {
             startActivity(intent);
         }
 
+        // Change to existing button view
+//        if (characterBtnIds.get(v.getId()) != null) {
+//            Intent intent = new Intent(this, MainCharacter.class);
+//            intent.putExtra("characterId", characterBtnIds.get(v.getId()));
+//            startActivity(intent);
+//        }
     }
 
     /**
