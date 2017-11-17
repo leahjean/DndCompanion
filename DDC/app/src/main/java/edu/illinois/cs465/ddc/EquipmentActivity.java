@@ -36,16 +36,21 @@ public class EquipmentActivity extends Activity {
         listDataHeader.add("Quiver");
 
         List<String> armorDesc = new ArrayList<>();
-        armorDesc.add("this light armor grants you +2 AC");
+        armorDesc.add("this light armor grants you +2 AC and makes you the most desirable man on earth to all those babes. cause that's what we care about. imaginary babes.");
 
         List<String> daggerDesc = new ArrayList<>();
         daggerDesc.add("dagaggagaaga");
+        daggerDesc.add("you can attack with this dagger twice in one turn");
+        daggerDesc.add("it does 1d4 + DEX damage");
 
         List<String> lbDesc = new ArrayList<>();
         lbDesc.add("BOWWWWWwwwwww");
+        lbDesc.add("this bow has disadvantage at <20ft range");
+        lbDesc.add("when you crit with this bow, add an extra d6 on top of normal crit damage");
 
         List<String> qDesc = new ArrayList<>();
         qDesc.add("KwYvVvVVvVvVRrrr");
+        qDesc.add("maximum capacity: 40 arrows");
 
 
         listHash.put(listDataHeader.get(0), armorDesc);
