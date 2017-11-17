@@ -1,10 +1,10 @@
 package edu.illinois.cs465.ddc;
 
+import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class InventoryActivity extends AppCompatActivity {
-
+public class InventoryActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
