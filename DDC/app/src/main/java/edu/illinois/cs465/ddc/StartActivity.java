@@ -7,6 +7,7 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.content.res.ResourcesCompat;
 import android.support.v4.view.ViewPager;
+import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -61,6 +62,8 @@ public class StartActivity extends Activity implements View.OnClickListener {
 
 
 
+        addExistingCharacterBtn("Greg");
+        addExistingCharacterBtn("Gregor");
     }
 
     public void onClick(View v) {
@@ -79,6 +82,13 @@ public class StartActivity extends Activity implements View.OnClickListener {
         return characterId;
     }
 
+    private int convertToDP(int dpSize) {
+        return (int) TypedValue.applyDimension(
+                TypedValue.COMPLEX_UNIT_DIP,
+                dpSize,
+                getResources().getDisplayMetrics());
+    }
+
     /**
      * Add existing character button for each character in the "database"
      * @param characterId Character id to index database on
@@ -91,8 +101,15 @@ public class StartActivity extends Activity implements View.OnClickListener {
         Drawable bg = ResourcesCompat.getDrawable(this.getResources(), R.drawable.expandable_button_background, null);
         characterBtn.setBackground(bg);
         characterBtn.setGravity(Gravity.CENTER);
-        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, 60);
-        params.setMargins(3, 0, 3, 0);
+        int height = convertToDP(60);
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT,
+                convertToDP(60));
+        params.setMargins(
+                convertToDP(0),
+                convertToDP(3),
+                convertToDP(0),
+                convertToDP(3));
         characterBtn.setLayoutParams(params);
         characterBtn.setTextSize(20);
 
