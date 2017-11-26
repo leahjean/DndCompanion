@@ -98,7 +98,7 @@ public class ClassSelectActivity extends Activity implements View.OnClickListene
                 break;
             case R.id.race_class_next_page_btn:
                 Bundle prevBundle = getIntent().getExtras();
-                Intent intent = new Intent(this, CurrencyActivity.class);
+                Intent intent = new Intent(this, StatsEditActivity.class);
                 intent.putExtra("Selected Class", getCurrentClass());
                 intent.putExtra("Selected Race", prevBundle.getString("Selected Race"));
                 startActivity(intent);

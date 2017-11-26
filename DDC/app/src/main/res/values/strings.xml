@@ -5,4 +5,8 @@
     <string name="details">Details</string>
     <string name="currency_header">Currency</string>
     <string name="equipment_header">Equipment</string>
+    <string name="title_activity_stats_edit">StatsEditActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_main">MainActivity</string>
 </resources>

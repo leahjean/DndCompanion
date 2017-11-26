@@ -44,7 +44,7 @@ public class StartActivity extends Activity implements View.OnClickListener {
 
     public void onClick(View v) {
         if (v.getId() == R.id.create_character_btn) {
-            Intent intent = new Intent(StartActivity.this, InventoryActivity.class);
+            Intent intent = new Intent(StartActivity.this, RaceSelectActivity.class);
             startActivity(intent);
         }
 

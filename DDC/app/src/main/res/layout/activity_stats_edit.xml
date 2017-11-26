@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="40sp"
+    android:layout_marginRight="40sp"
+    android:orientation="vertical"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="0dp"
+        android:layout_weight="8.5"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ability Scores"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:gravity="center"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="Strength"
+                    android:textSize="20dp"
+                    android:gravity="left|center_vertical"
+                    android:layout_gravity="left"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:textSize="30dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="Dexterity"
+                    android:textSize="20dp"
+                    android:gravity="left|center_vertical"
+                    android:layout_gravity="left"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:textSize="30dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="Constitution"
+                    android:textSize="20dp"
+                    android:gravity="left|center_vertical"
+                    android:layout_gravity="left"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:textSize="30dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="Intelligence"
+                    android:textSize="20dp"
+                    android:gravity="left|center_vertical"
+                    android:layout_gravity="left"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:textSize="30dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="Wisdom"
+                    android:textSize="20dp"
+                    android:gravity="left|center_vertical"
+                    android:layout_gravity="left"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:textSize="30dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="Charisma"
+                    android:textSize="20dp"
+                    android:gravity="left|center_vertical"
+                    android:layout_gravity="left"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:textSize="30dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="top|center">
+
+        <Button
+            android:id="@+id/stats_edit_back_page_btn"
+            android:text="@string/back"
+            android:layout_marginRight="30dp"
+            style="@style/RaceClassNextBackBtn"
+            android:background="@drawable/expandable_button_background"/>
+
+        <Button
+            android:id="@+id/stats_edit_next_page_btn"
+            android:text="@string/next"
+            style="@style/RaceClassNextBackBtn"
+            android:background="@drawable/expandable_button_background"/>
+    </LinearLayout>
+</LinearLayout>

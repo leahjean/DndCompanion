@@ -29,7 +29,9 @@
         <activity android:name=".CurrencyActivity" />
         <activity android:name=".InventoryActivity" />
         <activity android:name=".EquipmentActivity" />
-        <activity android:name=".CharacterMainScreenActivity"></activity>
+        <activity android:name=".CharacterMainScreenActivity" />
+        <activity android:name=".StatsEditActivity" />
+        <activity android:name=".AbilityEditActivity"></activity>
     </application>
 
 </manifest>
