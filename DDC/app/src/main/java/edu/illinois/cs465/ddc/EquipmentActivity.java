@@ -20,7 +20,7 @@ public class EquipmentActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_equipment);
 
-        listView = (ExpandableListView) findViewById(R.id.ExpandaButton);
+        listView = (ExpandableListView) findViewById(R.id.equipmentExpandaButton);
         initData();
         listAdapter = new ExpandableListAdapter(this, listDataHeader, listHash);
         listView.setAdapter(listAdapter);
@@ -30,28 +30,25 @@ public class EquipmentActivity extends Activity {
         listDataHeader = new ArrayList<>();
         listHash = new HashMap<>();
 
-        listDataHeader.add("Light Armor");
+        listDataHeader.add("Leather Armor");
         listDataHeader.add("Iron Dagger");
         listDataHeader.add("Long Bow");
         listDataHeader.add("Quiver");
 
         List<String> armorDesc = new ArrayList<>();
-        armorDesc.add("this light armor grants you +2 AC and makes you the most desirable man on earth to all those babes. cause that's what we care about. imaginary babes.");
+        armorDesc.add("This medium armor grants you +2 AC");
 
         List<String> daggerDesc = new ArrayList<>();
-        daggerDesc.add("dagaggagaaga");
-        daggerDesc.add("you can attack with this dagger twice in one turn");
-        daggerDesc.add("it does 1d4 + DEX damage");
+        daggerDesc.add("1d4 + DEX damage");
+        daggerDesc.add("You can attack with this dagger twice in one turn");
 
         List<String> lbDesc = new ArrayList<>();
-        lbDesc.add("BOWWWWWwwwwww");
-        lbDesc.add("this bow has disadvantage at <20ft range");
-        lbDesc.add("when you crit with this bow, add an extra d6 on top of normal crit damage");
+        lbDesc.add("300ft range, disadvantage within 20ft");
+        lbDesc.add("1d8 + DEX damage");
+        lbDesc.add("When you crit with this bow, add an extra d6 on top of normal crit damage");
 
         List<String> qDesc = new ArrayList<>();
-        qDesc.add("KwYvVvVVvVvVRrrr");
-        qDesc.add("maximum capacity: 40 arrows");
-
+        qDesc.add("Maximum capacity: 40 arrows");
 
         listHash.put(listDataHeader.get(0), armorDesc);
         listHash.put(listDataHeader.get(1), daggerDesc);

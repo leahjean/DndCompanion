@@ -50,12 +50,11 @@ public class StartActivity extends Activity implements View.OnClickListener {
         }
 
         // Change to existing button view
-//        TODO: Commented out while main character screens are still in the design phase
-//        if (characterBtnIds.get(v.getId()) != null) {
-//            Intent intent = new Intent(this, MainCharacter.class);
-//            intent.putExtra("characterId", characterBtnIds.get(v.getId()));
-//            startActivity(intent);
-//        }
+       if (characterBtnIds.get(v.getId()) != null) {
+            Intent intent = new Intent(this, CharacterMainScreenActivity.class);
+            intent.putExtra("characterId", characterBtnIds.get(v.getId()));
+            startActivity(intent);
+        }
     }
 
     /**

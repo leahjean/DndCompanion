@@ -5,11 +5,11 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="top"
-    tools:context="edu.illinois.cs465.ddc.CharacterMainScreenActivity"
+    tools:context="edu.illinois.cs465.ddc.SuppliesActivity"
     android:background="@color/beige">
 
     <LinearLayout
-        android:id="@+id/headerbar"
+        android:id="@+id/suppliesHeaderbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -18,44 +18,20 @@
         android:padding="10dp">
 
         <ImageButton
+            android:id="@+id/suppliesBackBtn"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:src="@drawable/ic_person_black_24dp"
+            android:src="@drawable/ic_navigate_before_black_24dp"
             android:background="@drawable/tan_button"/>
 
         <TextView style="@style/HeaderText"
-            android:text="Greg"
+            android:text="@string/supplies_header"
             android:background="@color/beige_lighter"
             android:layout_gravity="center"
             android:layout_marginLeft="10dp"/>
 
-
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="10dp"
-            android:text="Proficiency: +"
-            android:textColor="@color/black"
-            android:textSize="30sp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="10dp"
-            android:text="2"
-            android:textColor="@color/black"
-            android:textSize="30sp"/>
-
-    </LinearLayout>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -63,12 +39,10 @@
         <ExpandableListView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/msExpandaButton">
+            android:id="@+id/suppliesExpandaButton">
 
         </ExpandableListView>
 
-
     </RelativeLayout>
-
 
 </LinearLayout>
