@@ -5,7 +5,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -98,7 +97,7 @@ public class ClassSelectActivity extends Activity implements View.OnClickListene
                 break;
             case R.id.race_class_next_page_btn:
                 Bundle prevBundle = getIntent().getExtras();
-                Intent intent = new Intent(this, CurrencyActivity.class);
+                Intent intent = new Intent(this, CharBackgroundActivity.class);
                 intent.putExtra("Selected Class", getCurrentClass());
                 intent.putExtra("Selected Race", prevBundle.getString("Selected Race"));
                 startActivity(intent);

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:id="@+id/headerbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="left"
+        android:background="@color/beige_lighter"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/headerBackBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_navigate_before_black_24dp"
+            android:background="@drawable/tan_button"/>
+
+        <TextView style="@style/HeaderText"
+            android:text="@string/note_header"
+            android:background="@color/beige_lighter"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+    <edu.illinois.cs465.ddc.LinedEditText
+        android:id="@+id/note_input_field"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:inputType="textMultiLine"
+        android:hint="@string/note_hint"
+        android:scrollbars="vertical"
+        android:gravity="top|start"
+        android:textSize="17sp"
+        android:padding="7dp"
+        android:layout_marginBottom="10dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
+
+</LinearLayout>

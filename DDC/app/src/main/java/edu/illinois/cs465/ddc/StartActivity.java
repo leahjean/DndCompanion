@@ -40,15 +40,17 @@ public class StartActivity extends Activity implements View.OnClickListener {
 
         addExistingCharacterBtn("Greg");
         addExistingCharacterBtn("Gregor");
+        addExistingCharacterBtn("Gregoth");
     }
 
     public void onClick(View v) {
         if (v.getId() == R.id.create_character_btn) {
-            Intent intent = new Intent(StartActivity.this, InventoryActivity.class);
+            Intent intent = new Intent(StartActivity.this, RaceSelectActivity.class);
             startActivity(intent);
         }
 
         // Change to existing button view
+//        TODO: Commented out while main character screens are still in the design phase
 //        if (characterBtnIds.get(v.getId()) != null) {
 //            Intent intent = new Intent(this, MainCharacter.class);
 //            intent.putExtra("characterId", characterBtnIds.get(v.getId()));

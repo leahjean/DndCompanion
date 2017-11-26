@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/headerbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="left"
+        android:background="@color/beige_lighter"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/notesHeaderBackBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_navigate_before_black_24dp"
+            android:background="@drawable/tan_button"/>
+
+        <TextView style="@style/HeaderText"
+            android:text="@string/note_list_header"
+            android:background="@color/beige_lighter"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+    <ExpandableListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/NotesExpandaButton" />
+
+</LinearLayout>

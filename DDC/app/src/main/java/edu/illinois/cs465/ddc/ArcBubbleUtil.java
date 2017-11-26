@@ -13,8 +13,14 @@ import com.oguzdev.circularfloatingactionmenu.library.FloatingActionButton;
 import com.oguzdev.circularfloatingactionmenu.library.FloatingActionMenu;
 import com.oguzdev.circularfloatingactionmenu.library.SubActionButton;
 
+/**
+ * Arc Bubble implementation. Call createArcBubble in onCreate() to add arc bubble to any screen.
+ */
 
 public class ArcBubbleUtil {
+    // Empty private constructor to prevent instantiation of the utility class
+    private ArcBubbleUtil() {}
+
     public static void createArcBubble(Activity currActivity){
         ImageView arcIcon = new ImageView(currActivity);
         arcIcon.setImageResource(R.drawable.menu_icon);

@@ -70,7 +70,7 @@
         <Button
             android:id="@+id/race_class_back_page_btn"
             android:text="@string/back"
-            android:layout_marginRight="30dp"
+            android:layout_marginEnd="30dp"
             style="@style/RaceClassNextBackBtn"
             android:background="@drawable/expandable_button_background"/>
 
