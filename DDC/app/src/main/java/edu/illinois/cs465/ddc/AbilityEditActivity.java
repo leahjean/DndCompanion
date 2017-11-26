@@ -29,7 +29,7 @@ public class AbilityEditActivity extends Activity implements View.OnClickListene
                 this.finish();
                 break;
             case R.id.stats_edit_next_page_btn:
-                Intent intent = new Intent(this, CharacterMainScreenActivity.class);
+                Intent intent = new Intent(this, CharBackgroundActivity.class);
                 startActivity(intent);
         }
 

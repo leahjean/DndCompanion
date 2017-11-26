@@ -19,11 +19,14 @@ import com.oguzdev.circularfloatingactionmenu.library.SubActionButton;
 
 
 public class ArcBubbleUtil {
-    public static void createArcBubble(final Activity currActivity){
-    // Empty private constructor to prevent instantiation of the utility class
+
     private ArcBubbleUtil() {}
 
-    public static void createArcBubble(Activity currActivity){
+    public static void createArcBubble(final Activity currActivity){
+    // Empty private constructor to prevent instantiation of the utility class
+
+
+
         ImageView arcIcon = new ImageView(currActivity);
         arcIcon.setImageResource(R.drawable.menu_icon);
 
