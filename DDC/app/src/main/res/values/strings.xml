@@ -2,11 +2,14 @@
     <string name="app_name">DDC</string>
     <string name="back">Back</string>
     <string name="next">Next</string>
+    <string name="background_edittext_hint"><b>Type in your character background!</b></string>
+    <string name="note_hint"><b>Note...</b></string>
     <string name="details">Details</string>
     <string name="currency_header">Currency</string>
     <string name="equipment_header">Equipment</string>
-    <string name="title_activity_stats_edit">StatsEditActivity</string>
-    <string name="action_settings">Settings</string>
-    <string name="section_format">Hello World from section: %1$d</string>
-    <string name="title_activity_main">MainActivity</string>
+    <string name="note_list_header">Notes</string>
+    <string name="note_header">Note</string>
+    <string name="background_header">Background</string>
+    <string name="supplies_header">Supplies</string>
+    <string name="inventory_header">Inventory</string>
 </resources>

@@ -25,6 +25,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".RaceSelectActivity" />
+        <activity android:name=".CharBackgroundActivity" />
         <activity android:name=".ClassSelectActivity" />
         <activity android:name=".CurrencyActivity" />
         <activity android:name=".InventoryActivity" />
@@ -32,6 +33,9 @@
         <activity android:name=".CharacterMainScreenActivity" />
         <activity android:name=".StatsEditActivity" />
         <activity android:name=".AbilityEditActivity"></activity>
+        <activity android:name=".NoteActivity" />
+        <activity android:name=".NoteListActivity" />
+        <activity android:name=".CharacterMainScreenActivity"></activity>
     </application>
 
 </manifest>

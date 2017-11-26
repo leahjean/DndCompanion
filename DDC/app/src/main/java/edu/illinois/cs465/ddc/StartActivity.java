@@ -40,6 +40,7 @@ public class StartActivity extends Activity implements View.OnClickListener {
 
         addExistingCharacterBtn("Greg");
         addExistingCharacterBtn("Gregor");
+        addExistingCharacterBtn("Gregoth");
     }
 
     public void onClick(View v) {
@@ -49,11 +50,11 @@ public class StartActivity extends Activity implements View.OnClickListener {
         }
 
         // Change to existing button view
-//        if (characterBtnIds.get(v.getId()) != null) {
-//            Intent intent = new Intent(this, MainCharacter.class);
-//            intent.putExtra("characterId", characterBtnIds.get(v.getId()));
-//            startActivity(intent);
-//        }
+       if (characterBtnIds.get(v.getId()) != null) {
+            Intent intent = new Intent(this, CharacterMainScreenActivity.class);
+            intent.putExtra("characterId", characterBtnIds.get(v.getId()));
+            startActivity(intent);
+        }
     }
 
     /**

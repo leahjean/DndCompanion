@@ -19,9 +19,9 @@ public class CharacterMainScreenActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_equipment);
+        setContentView(R.layout.activity_character_main_screen);
 
-        listView = (ExpandableListView) findViewById(R.id.ExpandaButton);
+        listView = (ExpandableListView) findViewById(R.id.msExpandaButton);
         initData();
         listAdapter = new ExpandableListAdapter(this, listDataHeader, listHash);
         listView.setAdapter(listAdapter);
@@ -31,15 +31,15 @@ public class CharacterMainScreenActivity extends Activity {
         listDataHeader = new ArrayList<>();
         listHash = new HashMap<>();
 
-        listDataHeader.add("STR");
-        listDataHeader.add("CON");
-        listDataHeader.add("DEX");
-        listDataHeader.add("INT");
-        listDataHeader.add("WIS");
-        listDataHeader.add("CHA");
+        listDataHeader.add("STR: +3");
+        listDataHeader.add("CON: +1");
+        listDataHeader.add("DEX: +1");
+        listDataHeader.add("INT: -1");
+        listDataHeader.add("WIS: +0");
+        listDataHeader.add("CHA: +0");
 
         List<String> strDesc = new ArrayList<>();
-        strDesc.add("Athletics");
+        strDesc.add("Athletics [Prof]");
 
         List<String> conDesc = new ArrayList<>();
         conDesc.add("None");
@@ -61,11 +61,11 @@ public class CharacterMainScreenActivity extends Activity {
         wisDesc.add("Insight");
         wisDesc.add("Medicine");
         wisDesc.add("Perception");
-        wisDesc.add("Survival");
+        wisDesc.add("Survival [Prof]");
 
         List<String> chaDesc = new ArrayList<>();
         chaDesc.add("Deception");
-        chaDesc.add("Intimidation");
+        chaDesc.add("Intimidation [Prof]");
         chaDesc.add("Performance");
         chaDesc.add("Persuasion");
 
