@@ -17,10 +17,10 @@
 
         <ImageButton
             android:id="@+id/headerBackBtn"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/ic_navigate_before_black_24dp"
-            android:background="@drawable/tan_button"/>
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/ic_keyboard_arrow_left_white_24dp"
+            android:background="@drawable/red_circle_selector"/>
 
         <TextView style="@style/HeaderText"
             android:text="@string/note_header"
