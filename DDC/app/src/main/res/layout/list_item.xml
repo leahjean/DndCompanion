@@ -3,9 +3,12 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
+    <EditText
         android:id="@+id/lblListItem"
+        android:inputType="textMultiLine"
         android:paddingBottom="5dp"
+        android:scrollbars="vertical"
+        android:gravity="top|start"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:paddingLeft="10dp"
