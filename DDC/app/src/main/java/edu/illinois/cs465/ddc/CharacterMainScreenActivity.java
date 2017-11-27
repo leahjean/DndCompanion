@@ -1,15 +1,19 @@
 package edu.illinois.cs465.ddc;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ExpandableListView;
+import android.widget.ImageButton;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
 
-public class CharacterMainScreenActivity extends Activity {
+public class CharacterMainScreenActivity extends Activity implements View.OnClickListener {
 
     private ExpandableListView listView;
     private ExpandableListAdapter listAdapter;
@@ -26,9 +30,14 @@ public class CharacterMainScreenActivity extends Activity {
         listAdapter = new ExpandableListAdapter(this, listDataHeader, listHash);
         listView.setAdapter(listAdapter);
 
+        ImageButton backbtn = findViewById(R.id.main_screen_backbtn);
+        backbtn.setOnClickListener(this);
+
         // Initialize arc bubble
         ArcBubbleUtil.createArcBubble(this);
     }
+
+
 
     private void initData() {
         listDataHeader = new ArrayList<>();
@@ -78,5 +87,14 @@ public class CharacterMainScreenActivity extends Activity {
         listHash.put(listDataHeader.get(3), intDesc);
         listHash.put(listDataHeader.get(4), wisDesc);
         listHash.put(listDataHeader.get(5), chaDesc);
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.main_screen_backbtn:
+                this.finish();
+                break;
+        }
     }
 }
