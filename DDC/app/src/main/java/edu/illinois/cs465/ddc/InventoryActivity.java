@@ -9,5 +9,8 @@ public class InventoryActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inventory);
+
+        // Initialize arc bubble
+        ArcBubbleUtil.createArcBubble(this);
     }
 }

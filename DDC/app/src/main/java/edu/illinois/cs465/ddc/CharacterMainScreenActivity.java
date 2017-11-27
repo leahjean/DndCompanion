@@ -25,6 +25,9 @@ public class CharacterMainScreenActivity extends Activity {
         initData();
         listAdapter = new ExpandableListAdapter(this, listDataHeader, listHash);
         listView.setAdapter(listAdapter);
+
+        // Initialize arc bubble
+        ArcBubbleUtil.createArcBubble(this);
     }
 
     private void initData() {

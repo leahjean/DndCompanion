@@ -9,5 +9,8 @@ public class CurrencyActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_currency);
+
+        // Initialize arc bubble
+        ArcBubbleUtil.createArcBubble(this);
     }
 }
