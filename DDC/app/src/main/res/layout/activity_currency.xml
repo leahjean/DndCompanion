@@ -38,41 +38,42 @@
         android:layout_marginLeft="50dp"
         android:layout_marginTop="20dp">
 
-        <ImageButton
+        <Button
             android:id="@+id/goldCoin"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:background="@drawable/gold_circle"
             android:foreground="@drawable/new_coin_button"
-            />
+            android:text="G"
+            android:textSize="30sp"/>
 
-        <TextView style="@style/CurrencyText"
+        <EditText style="@style/CurrencyText"
             android:id="@+id/goldText"
             android:layout_toRightOf="@id/goldCoin"
             android:layout_marginTop="5dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_width="100dp"
+            android:layout_marginRight="50dp"
+            android:layout_width="match_parent"
             android:text="375"/>
 
-        <Button
-            android:id="@+id/goldPlusButton"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:background="@drawable/currency_modifier"
-            android:text="+"
-            android:textSize="30sp"
-            android:layout_toRightOf="@id/goldText"/>
+        <!--<Button-->
+            <!--android:id="@+id/goldPlusButton"-->
+            <!--android:layout_width="45dp"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:background="@drawable/currency_modifier"-->
+            <!--android:text="+"-->
+            <!--android:textSize="30sp"-->
+            <!--android:layout_toRightOf="@id/goldText"/>-->
 
-        <Button
-            android:id="@+id/goldMinusButton"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:layout_marginLeft="20dp"
-            android:background="@drawable/currency_modifier"
-            android:text="-"
-            android:textSize="30sp"
-            android:layout_toRightOf="@id/goldPlusButton"/>
+        <!--<Button-->
+            <!--android:id="@+id/goldMinusButton"-->
+            <!--android:layout_width="45dp"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:background="@drawable/currency_modifier"-->
+            <!--android:text="-"-->
+            <!--android:textSize="30sp"-->
+            <!--android:layout_toRightOf="@id/goldPlusButton"/>-->
     </RelativeLayout>
 
     <RelativeLayout
@@ -87,35 +88,37 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:background="@drawable/silver_circle"
-            android:foreground="@drawable/new_coin_button"/>
+            android:foreground="@drawable/new_coin_button"
+            android:text="S"
+            android:textSize="30sp"/>
 
-        <TextView style="@style/CurrencyText"
+        <EditText style="@style/CurrencyText"
             android:id="@+id/silverText"
             android:layout_toRightOf="@id/silverCoin"
             android:layout_marginTop="5dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_width="100dp"
+            android:layout_marginRight="50dp"
+            android:layout_width="match_parent"
             android:text="8"/>
 
-        <Button
-            android:id="@+id/silverPlusButton"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:background="@drawable/currency_modifier"
-            android:text="+"
-            android:textSize="30sp"
-            android:layout_toRightOf="@id/silverText"/>
+        <!--<Button-->
+            <!--android:id="@+id/silverPlusButton"-->
+            <!--android:layout_width="45dp"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:background="@drawable/currency_modifier"-->
+            <!--android:text="+"-->
+            <!--android:textSize="30sp"-->
+            <!--android:layout_toRightOf="@id/silverText"/>-->
 
-        <Button
-            android:id="@+id/silverMinusButton"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:layout_marginLeft="20dp"
-            android:background="@drawable/currency_modifier"
-            android:text="-"
-            android:textSize="30sp"
-            android:layout_toRightOf="@id/silverPlusButton"/>
+        <!--<Button-->
+            <!--android:id="@+id/silverMinusButton"-->
+            <!--android:layout_width="45dp"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:background="@drawable/currency_modifier"-->
+            <!--android:text="-"-->
+            <!--android:textSize="30sp"-->
+            <!--android:layout_toRightOf="@id/silverPlusButton"/>-->
     </RelativeLayout>
 
     <RelativeLayout
@@ -130,35 +133,37 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:background="@drawable/bronze_circle"
-            android:foreground="@drawable/new_coin_button"/>
+            android:foreground="@drawable/new_coin_button"
+            android:text="B"
+            android:textSize="30sp"/>
 
-        <TextView style="@style/CurrencyText"
+        <EditText style="@style/CurrencyText"
             android:id="@+id/bronzeText"
             android:layout_toRightOf="@id/bronzeCoin"
             android:layout_marginTop="5dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_width="100dp"
+            android:layout_marginRight="50dp"
+            android:layout_width="match_parent"
             android:text="8"/>
 
-        <Button
-            android:id="@+id/bronzePlusButton"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:background="@drawable/currency_modifier"
-            android:text="+"
-            android:textSize="30sp"
-            android:layout_toRightOf="@id/bronzeText"/>
+        <!--<Button-->
+            <!--android:id="@+id/bronzePlusButton"-->
+            <!--android:layout_width="45dp"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:background="@drawable/currency_modifier"-->
+            <!--android:text="+"-->
+            <!--android:textSize="30sp"-->
+            <!--android:layout_toRightOf="@id/bronzeText"/>-->
 
-        <Button
-            android:id="@+id/bronzeMinusButton"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:layout_marginLeft="20dp"
-            android:background="@drawable/currency_modifier"
-            android:text="-"
-            android:textSize="30sp"
-            android:layout_toRightOf="@id/bronzePlusButton"/>
+        <!--<Button-->
+            <!--android:id="@+id/bronzeMinusButton"-->
+            <!--android:layout_width="45dp"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:background="@drawable/currency_modifier"-->
+            <!--android:text="-"-->
+            <!--android:textSize="30sp"-->
+            <!--android:layout_toRightOf="@id/bronzePlusButton"/>-->
     </RelativeLayout>
 
     <RelativeLayout
@@ -173,59 +178,61 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:background="@drawable/copper_circle"
-            android:foreground="@drawable/new_coin_button"/>
+            android:foreground="@drawable/new_coin_button"
+            android:text="C"
+            android:textSize="30sp"/>
 
-        <TextView style="@style/CurrencyText"
+        <EditText style="@style/CurrencyText"
             android:id="@+id/copperText"
             android:layout_toRightOf="@id/copperCoin"
             android:layout_marginTop="5dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_width="100dp"
+            android:layout_marginRight="50dp"
+            android:layout_width="match_parent"
             android:text="1001"/>
 
-        <Button
-            android:id="@+id/copperPlusButton"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:background="@drawable/currency_modifier"
-            android:text="+"
-            android:textSize="30sp"
-            android:layout_toRightOf="@id/copperText"/>
+        <!--<Button-->
+            <!--android:id="@+id/copperPlusButton"-->
+            <!--android:layout_width="45dp"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:background="@drawable/currency_modifier"-->
+            <!--android:text="+"-->
+            <!--android:textSize="30sp"-->
+            <!--android:layout_toRightOf="@id/copperText"/>-->
 
-        <Button
-            android:id="@+id/copperMinusButton"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:layout_marginLeft="20dp"
-            android:background="@drawable/currency_modifier"
-            android:text="-"
-            android:textSize="30sp"
-            android:layout_toRightOf="@id/copperPlusButton"/>
+        <!--<Button-->
+            <!--android:id="@+id/copperMinusButton"-->
+            <!--android:layout_width="45dp"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:background="@drawable/currency_modifier"-->
+            <!--android:text="-"-->
+            <!--android:textSize="30sp"-->
+            <!--android:layout_toRightOf="@id/copperPlusButton"/>-->
     </RelativeLayout>
 
-    <RelativeLayout
-        android:id="@+id/newCurrency"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="30dp">
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/newCurrency"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_marginLeft="50dp"-->
+        <!--android:layout_marginTop="30dp">-->
 
-        <Button
-            android:id="@+id/newCoin"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:text="+"
-            android:textSize="50sp"
-            android:background="@drawable/new_coin_button"/>
+        <!--<Button-->
+            <!--android:id="@+id/newCoin"-->
+            <!--android:layout_width="60dp"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:text="+"-->
+            <!--android:textSize="50sp"-->
+            <!--android:background="@drawable/new_coin_button"/>-->
 
-        <TextView style="@style/CurrencyText"
-            android:id="@+id/newText"
-            android:layout_toRightOf="@id/newCoin"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_width="100dp"
-            android:text="NEW"/>
-    </RelativeLayout>
+        <!--<TextView style="@style/CurrencyText"-->
+            <!--android:id="@+id/newText"-->
+            <!--android:layout_toRightOf="@id/newCoin"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:text="NEW"/>-->
+    <!--</RelativeLayout>-->
 </LinearLayout>

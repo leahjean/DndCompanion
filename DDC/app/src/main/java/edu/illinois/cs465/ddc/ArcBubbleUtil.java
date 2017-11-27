@@ -75,7 +75,7 @@ public class ArcBubbleUtil {
 
             @Override
             public void onClick(View v) {
-                Intent it = new Intent(currActivity, CharacterMainScreenActivity.class);
+                Intent it = new Intent(currActivity, NoteListActivity.class);
                 currActivity.startActivity(it);
             }
         });

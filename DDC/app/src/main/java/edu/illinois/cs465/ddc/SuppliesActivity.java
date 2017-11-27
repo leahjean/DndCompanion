@@ -2,14 +2,15 @@ package edu.illinois.cs465.ddc;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ExpandableListView;
+import android.widget.ImageButton;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
 public class SuppliesActivity extends Activity {
-
     private ExpandableListView listView;
     private ExpandableListAdapter listAdapter;
     private List<String> listDataHeader;
@@ -24,6 +25,15 @@ public class SuppliesActivity extends Activity {
         initData();
         listAdapter = new ExpandableListAdapter(this, listDataHeader, listHash);
         listView.setAdapter(listAdapter);
+
+        // Initialize click listener for the back button
+        ImageButton headerBackBtn = (ImageButton) findViewById(R.id.suppliesBackBtn);
+        headerBackBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
         // Initialize arc bubble
         ArcBubbleUtil.createArcBubble(this);
