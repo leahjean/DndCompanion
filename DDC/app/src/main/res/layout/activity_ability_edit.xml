@@ -48,12 +48,10 @@
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
                         android:gravity="right">
-                        <EditText
+                        <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:inputType="number"
-                            android:textSize="20dp" />
+                            android:gravity="center" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -77,12 +75,10 @@
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
                         android:gravity="right">
-                        <EditText
+                        <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:inputType="number"
-                            android:textSize="20dp" />
+                            android:gravity="center" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -106,12 +102,10 @@
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
                         android:gravity="right">
-                        <EditText
+                        <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:inputType="number"
-                            android:textSize="20dp" />
+                            android:gravity="center" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -135,12 +129,10 @@
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
                         android:gravity="right">
-                        <EditText
+                        <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:inputType="number"
-                            android:textSize="20dp" />
+                            android:gravity="center" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -164,12 +156,10 @@
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
                         android:gravity="right">
-                        <EditText
+                        <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:inputType="number"
-                            android:textSize="20dp" />
+                            android:gravity="center" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -193,12 +183,10 @@
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
                         android:gravity="right">
-                        <EditText
+                        <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:inputType="number"
-                            android:textSize="20dp" />
+                            android:gravity="center" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -222,12 +210,10 @@
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
                         android:gravity="right">
-                        <EditText
+                        <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:inputType="number"
-                            android:textSize="20dp" />
+                            android:gravity="center" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -251,12 +237,10 @@
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
                         android:gravity="right">
-                        <EditText
+                        <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:inputType="number"
-                            android:textSize="20dp" />
+                            android:gravity="center" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -280,12 +264,10 @@
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
                         android:gravity="right">
-                        <EditText
+                        <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:inputType="number"
-                            android:textSize="20dp" />
+                            android:gravity="center" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -309,12 +291,10 @@
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
                         android:gravity="right">
-                        <EditText
+                        <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:inputType="number"
-                            android:textSize="20dp" />
+                            android:gravity="center" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -338,12 +318,10 @@
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
                         android:gravity="right">
-                        <EditText
+                        <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:inputType="number"
-                            android:textSize="20dp" />
+                            android:gravity="center" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -367,12 +345,10 @@
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
                         android:gravity="right">
-                        <EditText
+                        <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:inputType="number"
-                            android:textSize="20dp" />
+                            android:gravity="center" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -396,12 +372,10 @@
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
                         android:gravity="right">
-                        <EditText
+                        <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:inputType="number"
-                            android:textSize="20dp" />
+                            android:gravity="center" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -425,12 +399,10 @@
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
                         android:gravity="right">
-                        <EditText
+                        <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:inputType="number"
-                            android:textSize="20dp" />
+                            android:gravity="center" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -454,12 +426,10 @@
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
                         android:gravity="right">
-                        <EditText
+                        <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:inputType="number"
-                            android:textSize="20dp" />
+                            android:gravity="center" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -483,12 +453,10 @@
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
                         android:gravity="right">
-                        <EditText
+                        <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:inputType="number"
-                            android:textSize="20dp" />
+                            android:gravity="center" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -512,12 +480,10 @@
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
                         android:gravity="right">
-                        <EditText
+                        <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:inputType="number"
-                            android:textSize="20dp" />
+                            android:gravity="center" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -541,12 +507,10 @@
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
                         android:gravity="right">
-                        <EditText
+                        <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:inputType="number"
-                            android:textSize="20dp" />
+                            android:gravity="center" />
                     </LinearLayout>
 
                 </LinearLayout>
