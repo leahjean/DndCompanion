@@ -34,9 +34,9 @@
         <activity android:name=".StatsEditActivity" />
         <activity android:name=".AbilityEditActivity"></activity>
         <activity android:name=".NoteActivity" />
+        <activity android:name=".SuppliesActivity"/>
         <activity android:name=".NoteListActivity" />
         <activity android:name=".Test" />
-        <activity android:name=".CharacterMainScreenActivity"></activity>
     </application>
 
 </manifest>

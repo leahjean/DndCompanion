@@ -8,6 +8,7 @@
     android:gravity="center">
     <ImageView
         android:layout_width="match_parent"
+        android:src="@drawable/ddc_title"
         android:layout_height="0dp"
         android:layout_weight="3"
         />
