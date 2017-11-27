@@ -2,27 +2,16 @@ package edu.illinois.cs465.ddc;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.content.res.ResourcesCompat;
-import android.support.v4.view.ViewPager;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.FrameLayout;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import com.oguzdev.circularfloatingactionmenu.library.FloatingActionButton;
-import com.oguzdev.circularfloatingactionmenu.library.FloatingActionMenu;
-import com.oguzdev.circularfloatingactionmenu.library.SubActionButton;
-
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 
 public class StartActivity extends Activity implements View.OnClickListener {
     private Button createCharacterBtn;
@@ -45,7 +34,7 @@ public class StartActivity extends Activity implements View.OnClickListener {
 
     public void onClick(View v) {
         if (v.getId() == R.id.create_character_btn) {
-            Intent intent = new Intent(StartActivity.this, Test.class);
+            Intent intent = new Intent(StartActivity.this, CombatTabActivity.class);
             startActivity(intent);
         }
 
