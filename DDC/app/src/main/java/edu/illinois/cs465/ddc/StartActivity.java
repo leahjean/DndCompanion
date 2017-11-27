@@ -36,8 +36,6 @@ public class StartActivity extends Activity implements View.OnClickListener {
         createCharacterBtn = (Button) findViewById(R.id.create_character_btn);
         createCharacterBtn.setOnClickListener(this);
 
-        ArcBubbleUtil.createArcBubble(this);
-
         addExistingCharacterBtn("Greg");
         addExistingCharacterBtn("Gregor");
         addExistingCharacterBtn("Gregoth");

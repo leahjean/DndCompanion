@@ -63,7 +63,7 @@ public class CharBackgroundActivity extends Activity implements View.OnClickList
                 break;
             case R.id.bg_next_page_btn:
                 Bundle prevBundle = getIntent().getExtras();
-                Intent intent = new Intent(this, StartActivity.class);
+                Intent intent = new Intent(this, CharacterMainScreenActivity.class);
                 intent.putExtra("Selected Class", prevBundle.getString("Selected Class"));
                 intent.putExtra("Selected Race", prevBundle.getString("Selected Race"));
                 intent.putExtra("Background", editText.getText().toString());
