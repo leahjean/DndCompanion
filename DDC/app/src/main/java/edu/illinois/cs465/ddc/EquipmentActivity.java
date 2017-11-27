@@ -4,14 +4,15 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ExpandableListView;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class EquipmentActivity extends Activity {
-
+public class EquipmentActivity extends Activity implements View.OnClickListener {
+    private ImageButton back_button;
     private ExpandableListView listView;
     private ExpandableListAdapter listAdapter;
     private List<String> listDataHeader;
@@ -21,6 +22,9 @@ public class EquipmentActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_equipment);
+
+        back_button = (ImageButton) findViewById(R.id.equipmentBackBtn);
+        back_button.setOnClickListener(this);
 
         listView = (ExpandableListView) findViewById(R.id.equipmentExpandaButton);
         initData();
@@ -59,5 +63,14 @@ public class EquipmentActivity extends Activity {
         listHash.put(listDataHeader.get(1), daggerDesc);
         listHash.put(listDataHeader.get(2), lbDesc);
         listHash.put(listDataHeader.get(3), qDesc);
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch(view.getId()) {
+            case R.id.equipmentBackBtn:
+                this.finish();
+                break;
+        }
     }
 }

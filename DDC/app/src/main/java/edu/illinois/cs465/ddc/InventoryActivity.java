@@ -11,11 +11,15 @@ import android.widget.Toast;
 
 public class InventoryActivity extends Activity implements View.OnClickListener {
     private Button equipment_button, supplies_button, currency_button;
+    private ImageButton back_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inventory);
+
+        back_button = (ImageButton) findViewById(R.id.inventoryBackBtn);
+        back_button.setOnClickListener(this);
 
         equipment_button = (Button) findViewById(R.id.equipmentButton);
         equipment_button.setOnClickListener(this);
@@ -45,7 +49,7 @@ public class InventoryActivity extends Activity implements View.OnClickListener 
                 Intent intent_currency = new Intent(this, CurrencyActivity.class);
                 startActivity(intent_currency);
                 break;
-            case R.id.headerBackBtn:
+            case R.id.inventoryBackBtn:
                 this.finish();
                 break;
         }
