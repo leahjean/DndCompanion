@@ -28,6 +28,9 @@ public class StatsEditActivity extends Activity implements View.OnClickListener 
                 break;
             case R.id.stats_edit_next_page_btn:
                 Intent intent = new Intent(this, AbilityEditActivity.class);
+                Bundle prevBundle = getIntent().getExtras();
+                intent.putExtra("Selected Class", prevBundle.getString("Selected Class"));
+                intent.putExtra("Selected Race", prevBundle.getString("Selected Race"));
                 startActivity(intent);
         }
 
