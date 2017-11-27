@@ -41,11 +41,12 @@ public class StartActivity extends Activity implements View.OnClickListener {
         addExistingCharacterBtn("Greg");
         addExistingCharacterBtn("Gregor");
         addExistingCharacterBtn("Gregoth");
+        addExistingCharacterBtn("Gregothkin");
     }
 
     public void onClick(View v) {
         if (v.getId() == R.id.create_character_btn) {
-            Intent intent = new Intent(StartActivity.this, RaceSelectActivity.class);
+            Intent intent = new Intent(StartActivity.this, Test.class);
             startActivity(intent);
         }
 
