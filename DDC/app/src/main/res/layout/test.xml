@@ -40,14 +40,11 @@
         <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
             android:id="@+id/pager"
             android:layout_width="match_parent"
-<<<<<<< HEAD
             android:layout_height="wrap_content"
             android:layout_gravity="top"
             android:textColor="#73511C"
             android:paddingTop="5dp"
-            android:paddingBottom="5dp" />
-=======
-            android:layout_height="match_parent">
+            android:paddingBottom="5dp">
 
             <android.support.v4.view.PagerTabStrip
                 android:id="@+id/pager_title_strip"
@@ -59,8 +56,6 @@
                 android:paddingBottom="5dp" />
 
         </android.support.v4.view.ViewPager>
->>>>>>> d5a64aa69dbfa8e943be0d3868603097ea5cf1d3
-
     </RelativeLayout>
 
 </LinearLayout>
