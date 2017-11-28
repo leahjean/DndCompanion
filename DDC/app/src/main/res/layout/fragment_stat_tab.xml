@@ -2,12 +2,25 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:shrinkColumns="*"
+    android:stretchColumns="*">
+
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="25dp"></LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"
         android:orientation="horizontal">
 
         <TextView
@@ -17,9 +30,10 @@
             android:gravity="center"
             android:layout_weight="2"
             android:textSize="25sp"
+            android:textStyle="bold"
             android:text="STR: " />
 
-        <TextView
+        <EditText
             android:id="@+id/str_val"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -33,10 +47,11 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:layout_weight="2"
+            android:textStyle="bold"
             android:textSize="25sp"
             android:text="DEX: " />
 
-        <TextView
+        <EditText
             android:id="@+id/dex_val"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -51,9 +66,10 @@
             android:gravity="center"
             android:layout_weight="2"
             android:textSize="25sp"
+            android:textStyle="bold"
             android:text="CON: " />
 
-        <TextView
+        <EditText
             android:id="@+id/con_val"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -66,63 +82,76 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
         android:orientation="horizontal"
-        android:layout_marginBottom="25dp">
+        android:layout_marginTop="-5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginBottom="5dp">
+
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:layout_weight="2"
             android:textSize="20sp"
+            android:layout_weight="2"
             android:text="Save: " />
 
-        <TextView
+        <EditText
             android:id="@+id/str_save_val"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:textSize="20sp"
+            android:layout_weight="1"
             android:text="+6" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:layout_weight="2"
             android:textSize="20sp"
+            android:layout_weight="2"
             android:text="Save: " />
 
-        <TextView
+        <EditText
             android:id="@+id/dex_save_val"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="+3"
             android:layout_weight="1"
-            android:textSize="20sp"
-            android:text="+3" />
+            android:textSize="20sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:layout_weight="2"
             android:textSize="20sp"
+            android:layout_weight="2"
             android:text="Save: " />
 
-        <TextView
+        <EditText
             android:id="@+id/con_save_val"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:textSize="20sp"
+            android:layout_weight="1"
             android:text="+6" />
 
     </LinearLayout>
 
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
         android:orientation="horizontal">
 
 
@@ -133,9 +162,10 @@
             android:gravity="center"
             android:layout_weight="2"
             android:textSize="25sp"
+            android:textStyle="bold"
             android:text="INT: " />
 
-        <TextView
+        <EditText
             android:id="@+id/int_val"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -150,9 +180,10 @@
             android:gravity="center"
             android:layout_weight="2"
             android:textSize="25sp"
+            android:textStyle="bold"
             android:text="WIS: " />
 
-        <TextView
+        <EditText
             android:id="@+id/wis_val"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -167,9 +198,10 @@
             android:gravity="center"
             android:layout_weight="2"
             android:textSize="25sp"
+            android:textStyle="bold"
             android:text="CHA: " />
 
-        <TextView
+        <EditText
             android:id="@+id/cha_val"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -182,8 +214,12 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
         android:orientation="horizontal"
-        android:layout_marginBottom="25dp">
+        android:layout_marginTop="-5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginBottom="5dp">
 
 
         <TextView
@@ -194,7 +230,7 @@
             android:textSize="20sp"
             android:text="Save: " />
 
-        <TextView
+        <EditText
             android:id="@+id/int_save_val"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -210,7 +246,7 @@
             android:textSize="20sp"
             android:text="Save: " />
 
-        <TextView
+        <EditText
             android:id="@+id/wis_save_val"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -226,7 +262,7 @@
             android:textSize="20sp"
             android:text="Save: " />
 
-        <TextView
+        <EditText
             android:id="@+id/cha_save_val"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -236,64 +272,74 @@
 
     </LinearLayout>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"></LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="25dp">
+        android:gravity="center"
+        android:layout_marginBottom="5dp">
 
         <TextView
             android:id="@+id/proficiency_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="right"
-            android:layout_weight="1"
+
             android:textSize="25sp"
+            android:textStyle="bold"
             android:text="PROFICIENCY: " />
 
-        <TextView
+        <EditText
             android:id="@+id/proficiency_val"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:textSize="25sp"
-            android:text="+41" />
+            android:text="+2" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center_vertical"
         android:layout_marginBottom="25dp">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center">
+            android:layout_weight="2">
 
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/ic_launcher"
-                android:layout_marginRight="10dp"/>
+                android:id="@+id/imageView"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="35dp"
+                android:src="@drawable/heart" />
 
-            <TextView
+            <EditText
                 android:id="@+id/current_hp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="top"
                 android:text="70"
-                android:textSize="30sp"
-                />
+                android:textSize="30sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:text="/"
-                android:textSize="30sp"
-                />
+                android:textSize="30sp" />
 
             <TextView
                 android:id="@+id/max_hp"
@@ -301,54 +347,18 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:text="80"
-                android:textSize="30sp"
-                />
-
-
+                android:textSize="30sp" />
 
 
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/ic_launcher"
-                android:layout_marginRight="10dp"/>
-
-
-            <TextView
-                android:id="@+id/armor_val"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:text="18"
-                android:textSize="30sp"
-                />
-
-
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="25dp">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:gravity="center"
+            android:gravity="left"
             android:layout_gravity="center"
-            android:layout_weight="1">
+            android:layout_weight="3">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -362,7 +372,7 @@
                     android:textSize="18sp"
                     android:text="TEMP: "/>
 
-                <TextView
+                <EditText
                     android:id="@+id/temp_val"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -383,10 +393,11 @@
                     android:textSize="18sp"
                     android:text="HIT DICE: "/>
 
-                <TextView
+                <EditText
                     android:id="@+id/hit_dice_val"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
                     android:textSize="18sp"
                     android:text="4d8"/>
 
@@ -395,17 +406,58 @@
 
         </LinearLayout>
 
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="35dp"
+                android:paddingLeft="-8dp"
+                android:layout_weight="0.10"
+                android:layout_gravity="bottom"
+                android:src="@drawable/shield6" />
+
+
+            <TextView
+                android:id="@+id/armor_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="18"
+                android:textSize="30sp" />
+
+
+        </LinearLayout>
+
+
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:gravity="center">
+            android:layout_gravity="center_vertical">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/ic_launcher"
-                android:layout_marginRight="10dp"/>
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/speed"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="25dp"/>
 
 
             <TextView
@@ -433,14 +485,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center">
+        android:layout_gravity="left">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_gravity="center_vertical"
-            android:src="@mipmap/ic_launcher"
-            android:layout_marginRight="10dp"/>
+            android:src="@drawable/skull_and_bones"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="30dp"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -457,17 +510,17 @@
                     android:layout_height="wrap_content"
                     android:text="SUCCESSES: "/>
 
-                <RadioButton
+                <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/holo_green_light"/>
 
-                <RadioButton
+                <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/holo_green_light"/>
 
-                <RadioButton
+                <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/holo_green_light"/>
@@ -484,17 +537,17 @@
                     android:text="FAILURES: "
                     android:layout_marginRight="15dp"/>
 
-                <RadioButton
+                <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/holo_red_light"/>
 
-                <RadioButton
+                <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/holo_red_light"/>
 
-                <RadioButton
+                <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/holo_red_light"/>
