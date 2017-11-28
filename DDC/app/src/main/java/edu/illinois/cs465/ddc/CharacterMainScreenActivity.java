@@ -93,8 +93,8 @@ public class CharacterMainScreenActivity extends Activity implements View.OnClic
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.main_screen_backbtn:
-                this.finish();
-                break;
+                Intent intent = new Intent(this, StartActivity.class);
+                startActivity(intent);
         }
     }
 }
