@@ -8,6 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"
         android:orientation="horizontal">
 
         <TextView
@@ -17,9 +18,10 @@
             android:gravity="center"
             android:layout_weight="2"
             android:textSize="25sp"
+            android:textStyle="bold"
             android:text="STR: " />
 
-        <TextView
+        <EditText
             android:id="@+id/str_val"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -33,10 +35,11 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:layout_weight="2"
+            android:textStyle="bold"
             android:textSize="25sp"
             android:text="DEX: " />
 
-        <TextView
+        <EditText
             android:id="@+id/dex_val"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -51,9 +54,10 @@
             android:gravity="center"
             android:layout_weight="2"
             android:textSize="25sp"
+            android:textStyle="bold"
             android:text="CON: " />
 
-        <TextView
+        <EditText
             android:id="@+id/con_val"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -67,55 +71,58 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginBottom="25dp">
+        android:layout_marginTop="-5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginBottom="5dp">
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:layout_weight="2"
             android:textSize="20sp"
+            android:layout_weight="2"
             android:text="Save: " />
 
-        <TextView
+        <EditText
             android:id="@+id/str_save_val"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:textSize="20sp"
+            android:layout_weight="1"
             android:text="+6" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:layout_weight="2"
             android:textSize="20sp"
+            android:layout_weight="2"
             android:text="Save: " />
 
-        <TextView
+        <EditText
             android:id="@+id/dex_save_val"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="+3"
             android:layout_weight="1"
-            android:textSize="20sp"
-            android:text="+3" />
+            android:textSize="20sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:layout_weight="2"
             android:textSize="20sp"
+            android:layout_weight="2"
             android:text="Save: " />
 
-        <TextView
+        <EditText
             android:id="@+id/con_save_val"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:textSize="20sp"
+            android:layout_weight="1"
             android:text="+6" />
 
     </LinearLayout>
@@ -123,6 +130,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
         android:orientation="horizontal">
 
 
@@ -133,9 +141,10 @@
             android:gravity="center"
             android:layout_weight="2"
             android:textSize="25sp"
+            android:textStyle="bold"
             android:text="INT: " />
 
-        <TextView
+        <EditText
             android:id="@+id/int_val"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -150,9 +159,10 @@
             android:gravity="center"
             android:layout_weight="2"
             android:textSize="25sp"
+            android:textStyle="bold"
             android:text="WIS: " />
 
-        <TextView
+        <EditText
             android:id="@+id/wis_val"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -167,9 +177,10 @@
             android:gravity="center"
             android:layout_weight="2"
             android:textSize="25sp"
+            android:textStyle="bold"
             android:text="CHA: " />
 
-        <TextView
+        <EditText
             android:id="@+id/cha_val"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -183,7 +194,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginBottom="25dp">
+        android:layout_marginTop="-5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginBottom="5dp">
 
 
         <TextView
@@ -194,7 +208,7 @@
             android:textSize="20sp"
             android:text="Save: " />
 
-        <TextView
+        <EditText
             android:id="@+id/int_save_val"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -210,7 +224,7 @@
             android:textSize="20sp"
             android:text="Save: " />
 
-        <TextView
+        <EditText
             android:id="@+id/wis_save_val"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -226,7 +240,7 @@
             android:textSize="20sp"
             android:text="Save: " />
 
-        <TextView
+        <EditText
             android:id="@+id/cha_save_val"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -239,6 +253,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:layout_marginBottom="25dp">
 
         <TextView
@@ -246,15 +261,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="right"
-            android:layout_weight="1"
+
             android:textSize="25sp"
+            android:textStyle="bold"
             android:text="PROFICIENCY: " />
 
-        <TextView
+        <EditText
             android:id="@+id/proficiency_val"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:textSize="25sp"
             android:text="+41" />
 
