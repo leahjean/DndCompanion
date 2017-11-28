@@ -8,11 +8,17 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ExpandableListView;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
-public class CombatTabActivity extends FragmentActivity {
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
+public class CombatTabActivity extends FragmentActivity {
     ViewPager mViewPager;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +29,18 @@ public class CombatTabActivity extends FragmentActivity {
 
         mViewPager = (ViewPager) findViewById(R.id.pager);
         mViewPager.setAdapter(new CustomPagerAdapter(getSupportFragmentManager()));
+
+        // Initialize click listener for the back button
+        ImageButton headerBackBtn = (ImageButton) findViewById(R.id.combatBackBtn);
+        headerBackBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
+        // Initialize arc bubble
+        ArcBubbleUtil.createArcBubble(this);
     }
 
     class CustomPagerAdapter extends FragmentPagerAdapter {
@@ -64,14 +82,12 @@ public class CombatTabActivity extends FragmentActivity {
         }
 
         @Override
-        public CharSequence getPageTitle(int position) {
-            switch(position){
-                case 0:
-                    return "STATS";
-                case 1:
-                    return "ABILITY";
+        public CharSequence getPageTitle(int position){
+            if(position == 0) {
+                return "STATS";
+            } else {
+                return "ABILITIES";
             }
-            return null;
         }
     }
 
@@ -84,7 +100,10 @@ public class CombatTabActivity extends FragmentActivity {
         public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_demo, container, false);
             Bundle args = getArguments();
-            ((TextView) rootView.findViewById(R.id.textView)).setText("Page " + args.getInt("page_position"));
+            if(args.getInt("page_position")== 0)
+                ((TextView) rootView.findViewById(R.id.textView)).setText("Stats");
+            else
+                ((TextView) rootView.findViewById(R.id.textView)).setText("Abilities");
             return rootView;
         }
     }

@@ -278,37 +278,37 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center_vertical"
         android:layout_marginBottom="25dp">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center">
+            android:layout_weight="2">
 
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/ic_launcher"
-                android:layout_marginRight="10dp"/>
+                android:id="@+id/imageView"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="35dp"
+                android:src="@drawable/heart" />
 
-            <TextView
+            <EditText
                 android:id="@+id/current_hp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="top"
                 android:text="70"
-                android:textSize="30sp"
-                />
+                android:textSize="30sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:text="/"
-                android:textSize="30sp"
-                />
+                android:textSize="30sp" />
 
             <TextView
                 android:id="@+id/max_hp"
@@ -316,54 +316,18 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:text="80"
-                android:textSize="30sp"
-                />
-
-
+                android:textSize="30sp" />
 
 
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/ic_launcher"
-                android:layout_marginRight="10dp"/>
-
-
-            <TextView
-                android:id="@+id/armor_val"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:text="18"
-                android:textSize="30sp"
-                />
-
-
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="25dp">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:gravity="center"
+            android:gravity="left"
             android:layout_gravity="center"
-            android:layout_weight="1">
+            android:layout_weight="3">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -377,7 +341,7 @@
                     android:textSize="18sp"
                     android:text="TEMP: "/>
 
-                <TextView
+                <EditText
                     android:id="@+id/temp_val"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -398,10 +362,11 @@
                     android:textSize="18sp"
                     android:text="HIT DICE: "/>
 
-                <TextView
+                <EditText
                     android:id="@+id/hit_dice_val"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
                     android:textSize="18sp"
                     android:text="4d8"/>
 
@@ -410,17 +375,58 @@
 
         </LinearLayout>
 
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="35dp"
+                android:paddingLeft="-8dp"
+                android:layout_weight="0.10"
+                android:layout_gravity="bottom"
+                android:src="@drawable/shield6" />
+
+
+            <TextView
+                android:id="@+id/armor_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="18"
+                android:textSize="30sp" />
+
+
+        </LinearLayout>
+
+
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:gravity="center">
+            android:layout_gravity="center_vertical">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/ic_launcher"
-                android:layout_marginRight="10dp"/>
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/speed"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="25dp"/>
 
 
             <TextView
@@ -448,14 +454,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center">
+        android:layout_gravity="left">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_gravity="center_vertical"
-            android:src="@mipmap/ic_launcher"
-            android:layout_marginRight="10dp"/>
+            android:src="@drawable/skull_and_bones"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="30dp"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -472,17 +479,17 @@
                     android:layout_height="wrap_content"
                     android:text="SUCCESSES: "/>
 
-                <RadioButton
+                <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/holo_green_light"/>
 
-                <RadioButton
+                <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/holo_green_light"/>
 
-                <RadioButton
+                <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/holo_green_light"/>
@@ -499,17 +506,17 @@
                     android:text="FAILURES: "
                     android:layout_marginRight="15dp"/>
 
-                <RadioButton
+                <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/holo_red_light"/>
 
-                <RadioButton
+                <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/holo_red_light"/>
 
-                <RadioButton
+                <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/holo_red_light"/>
