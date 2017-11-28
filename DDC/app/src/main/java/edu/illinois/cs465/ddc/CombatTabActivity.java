@@ -25,6 +25,8 @@ public class CombatTabActivity extends FragmentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.test);
 
+        ArcBubbleUtil.createArcBubble(this);
+
         mViewPager = (ViewPager) findViewById(R.id.pager);
         mViewPager.setAdapter(new CustomPagerAdapter(getSupportFragmentManager()));
 
@@ -82,9 +84,9 @@ public class CombatTabActivity extends FragmentActivity {
         @Override
         public CharSequence getPageTitle(int position){
             if(position == 0) {
-                return "Stats";
+                return "STATS";
             } else {
-                return "Abilities";
+                return "ABILITIES";
             }
         }
     }
