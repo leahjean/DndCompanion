@@ -22,7 +22,7 @@ public class AbilityTab extends Fragment {
     private ExpandableListAdapter listAdapter;
     private List<String> listDataHeader;
     private HashMap<String, List<String>> listHash;
-    private List<String> listDataImages;
+    private List<Integer> listDataImages;
 
     @Nullable
     @Override
@@ -42,13 +42,13 @@ public class AbilityTab extends Fragment {
         listHash = new HashMap<>();
         listDataImages = new ArrayList<>();
 
-        listDataImages.add("fireball.png");
-        listDataImages.add("fireball.png");
-        listDataImages.add("fireball.png");
-        listDataImages.add("fireball.png");
-        listDataImages.add("fireball.png");
-        listDataImages.add("fireball.png");
-        listDataImages.add("fireball.png");
+        listDataImages.add(R.drawable.fireball);
+        listDataImages.add(R.drawable.lightning);
+        listDataImages.add(R.drawable.dimensiondoor);
+        listDataImages.add(R.drawable.magicmissile);
+        listDataImages.add(R.drawable.plantgrowth);
+        listDataImages.add(R.drawable.sparkles);
+        listDataImages.add(R.drawable.massheal);
 
         listDataHeader.add("Fireball");
         listDataHeader.add("Electrocute");

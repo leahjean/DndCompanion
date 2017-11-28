@@ -25,7 +25,7 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
     private Context context;
     private List<String> listDataHeader;
     private HashMap<String, List<String>> listHashMap;
-    private List<String> listDataImages;
+    private List<Integer> listDataImages;
 
     public ExpandableListAdapter(Context context, List<String> listDataHeader, HashMap<String, List<String>> listHashMap) {
         this.context = context;
@@ -34,7 +34,7 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
         this.hasImages = false;
     }
 
-    public ExpandableListAdapter(Context context, List<String> listDataHeader, HashMap<String, List<String>> listHashMap, List<String> listDataImages) {
+    public ExpandableListAdapter(Context context, List<String> listDataHeader, HashMap<String, List<String>> listHashMap, List<Integer> listDataImages) {
         this.context = context;
         this.listDataHeader = listDataHeader;
         this.listHashMap = listHashMap;
@@ -57,7 +57,7 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
         return listDataHeader.get(i);
     }
 
-    public String getImage(int i) { return listDataImages.get(i); }
+    public int getImage(int i) { return listDataImages.get(i); }
 
     @Override
     public Object getChild(int i, int i1) {
@@ -82,9 +82,9 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
     @Override
     public View getGroupView(int i, boolean b, View view, ViewGroup viewGroup) {
         String headerTitle = (String)getGroup(i);
-        String imageTitle = "";
+        int imageTitle = -1;
         if(this.hasImages) {
-            imageTitle = (String)getImage(i);
+            imageTitle = (int)getImage(i);
         }
 
         if(view == null){
@@ -98,9 +98,7 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
 
         if(this.hasImages) {
             ImageView lblListImage = (ImageView) view.findViewById(R.id.lblListImage);
-            Context cont = lblListImage.getContext();
-            int id = cont.getResources().getIdentifier(imageTitle, "drawable", cont.getPackageName());
-            lblListImage.setImageResource(id);
+            lblListImage.setImageResource(imageTitle);
         }
         return view;
     }
