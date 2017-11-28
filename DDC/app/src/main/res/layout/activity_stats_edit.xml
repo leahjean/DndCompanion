@@ -32,6 +32,7 @@
                 android:layout_weight="1">
 
                 <TextView
+                    android:id="@+id/strength_label"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
                     android:text="Strength"
@@ -59,6 +60,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="1">
                 <TextView
+                    android:id="@+id/dexterity_label"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
                     android:text="Dexterity"
@@ -86,6 +88,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="1">
                 <TextView
+                    android:id="@+id/constitution_label"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
                     android:text="Constitution"
@@ -113,6 +116,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="1">
                 <TextView
+                    android:id="@+id/intelligence_label"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
                     android:text="Intelligence"
@@ -140,6 +144,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="1">
                 <TextView
+                    android:id="@+id/wisdom_label"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
                     android:text="Wisdom"
@@ -167,6 +172,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="1">
                 <TextView
+                    android:id="@+id/charisma_label"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
                     android:text="Charisma"

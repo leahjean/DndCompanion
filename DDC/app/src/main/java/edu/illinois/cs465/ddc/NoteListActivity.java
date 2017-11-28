@@ -67,35 +67,31 @@ public class NoteListActivity extends Activity {
                 "Fey Wand",
                 "Gregoth Hammer",
                 "Bailean Arms",
-                "Red Shirt",
-                "Add new..."
+                "Red Shirt"
         )));
 
         // Events
         listHash.put(listDataHeader.get(1), new ArrayList<>(Arrays.asList(
                 "I ate an apple yesterday",
                 "I found a red shirt yesterday with stretched out sleeves",
-                "You think this mockup will get us an A?",
-                "Add new..."
+                "You think this mockup will get us an A?"
         )));
 
         // Fantastic Beasts
         listHash.put(listDataHeader.get(2), new ArrayList<>(Arrays.asList(
                 "Kenku = Loser",
-                "Gregothians",
-                "Add new..."
+                "Gregothians"
         )));
 
         // Character Nuances
         listHash.put(listDataHeader.get(3), new ArrayList<>(Arrays.asList(
                 "Would only go to Africa if they had no legs",
-                "Enjoys lying on chairs",
-                "Add new..."
+                "Enjoys lying on chairs"
         )));
 
         // List of My Favorite DMs
         listHash.put(listDataHeader.get(4), new ArrayList<>(Arrays.asList(
-                "Add new..."
+                "Greg"
         )));
     }
 
@@ -109,10 +105,6 @@ public class NoteListActivity extends Activity {
                 String noteMsg = "";
                 if (groupMsgs != null && !groupMsgs.isEmpty()) {
                     noteMsg = groupMsgs.get(childPosition);
-                }
-                // I should probably make this "Add new..." a string constant
-                if (noteMsg.equals("Add new...")) {
-                    noteMsg = "";
                 }
 
                 Intent noteIntent = new Intent(getApplicationContext(), NoteActivity.class);

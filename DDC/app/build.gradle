@@ -32,5 +32,6 @@ dependencies {
     compile 'com.oguzdev:CircularFloatingActionMenu:1.0.2'
     compile 'com.android.support:support-v13:26.+'
     compile 'com.android.support:design:26.0.0-alpha1'
+    compile 'com.github.douglasjunior:android-simple-tooltip:0.2.1'
     testCompile 'junit:junit:4.12'
 }

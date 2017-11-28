@@ -39,18 +39,12 @@
                 android:layout_height="0dp"
                 android:textSize="30sp"
                 android:textStyle="bold"
+                android:textColor="@color/black"
                 android:layout_gravity="center"
                 android:layout_weight="0.05"
+                android:layout_marginBottom="15dp"
                 android:text="Barbarian"/>
 
-            <Button
-                android:id="@+id/race_class_detail_btn"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                style="@style/class_race_details"
-                android:text="@string/details"
-                android:background="@drawable/expandable_button_background" />
         </LinearLayout>
         <ImageButton
             android:id="@+id/race_class_next_btn"
