@@ -22,6 +22,7 @@ public class AbilityTab extends Fragment {
     private ExpandableListAdapter listAdapter;
     private List<String> listDataHeader;
     private HashMap<String, List<String>> listHash;
+    private List<String> listDataImages;
 
     @Nullable
     @Override
@@ -30,7 +31,7 @@ public class AbilityTab extends Fragment {
 
         listView = (ExpandableListView) myview.findViewById(R.id.combatAbilitiesExpandaButton);
         initData();
-        listAdapter = new ExpandableListAdapter(myview.getContext(), listDataHeader, listHash);
+        listAdapter = new ExpandableListAdapter(myview.getContext(), listDataHeader, listHash, listDataImages);
         listView.setAdapter(listAdapter);
 
         return myview;
@@ -39,6 +40,15 @@ public class AbilityTab extends Fragment {
     private void initData() {
         listDataHeader = new ArrayList<>();
         listHash = new HashMap<>();
+        listDataImages = new ArrayList<>();
+
+        listDataImages.add("fireball.png");
+        listDataImages.add("fireball.png");
+        listDataImages.add("fireball.png");
+        listDataImages.add("fireball.png");
+        listDataImages.add("fireball.png");
+        listDataImages.add("fireball.png");
+        listDataImages.add("fireball.png");
 
         listDataHeader.add("Fireball");
         listDataHeader.add("Electrocute");
