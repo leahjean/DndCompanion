@@ -20,26 +20,23 @@ import com.oguzdev.circularfloatingactionmenu.library.SubActionButton;
 
 public class ArcBubbleUtil {
 
+    // Empty private constructor to prevent instantiation of the utility class
     private ArcBubbleUtil() {}
 
     public static void createArcBubble(final Activity currActivity){
-    // Empty private constructor to prevent instantiation of the utility class
-
-
-
         ImageView arcIcon = new ImageView(currActivity);
         arcIcon.setImageResource(R.drawable.menu_icon);
 
         FrameLayout.LayoutParams redCircleSize = new FrameLayout.LayoutParams(250,250);
-        FloatingActionButton arcBubble = new FloatingActionButton.Builder(currActivity).setBackgroundDrawable(R.drawable.red_circle_selector).setContentView(arcIcon).build();
+        final FloatingActionButton arcBubble = new FloatingActionButton.Builder(currActivity).setBackgroundDrawable(R.drawable.red_circle_selector).setContentView(arcIcon).build();
         arcBubble.setLayoutParams(redCircleSize);
         arcBubble.setPosition(FloatingActionButton.POSITION_BOTTOM_RIGHT,redCircleSize);
-
 
         SubActionButton.Builder itemBuilder = new SubActionButton.Builder(currActivity);
         itemBuilder.setBackgroundDrawable(currActivity.getResources().getDrawable(R.drawable.blue_circle_selector));
         FrameLayout.LayoutParams blueCircleSize = new FrameLayout.LayoutParams(200, 200);
         itemBuilder.setLayoutParams(blueCircleSize);
+
         ImageView itemIcon1 = new ImageView(currActivity);
         itemIcon1.setImageResource(R.drawable.ic_character);
         SubActionButton button1 = itemBuilder.setContentView(itemIcon1).build();
@@ -47,11 +44,11 @@ public class ArcBubbleUtil {
 
             @Override
             public void onClick(View v) {
+                arcBubble.performClick();
                 Intent it = new Intent(currActivity, CharacterMainScreenActivity.class);
                 currActivity.startActivity(it);
             }
         });
-
 
         ImageView itemIcon2 = new ImageView(currActivity);
         itemIcon2.setImageResource(R.drawable.ic_inventory);
@@ -61,11 +58,11 @@ public class ArcBubbleUtil {
 
             @Override
             public void onClick(View v) {
+                arcBubble.performClick();
                 Intent it = new Intent(currActivity, InventoryActivity.class);
                 currActivity.startActivity(it);
             }
         });
-
 
         ImageView itemIcon3 = new ImageView(currActivity);
         itemIcon3.setImageResource(R.drawable.ic_note);
@@ -75,6 +72,7 @@ public class ArcBubbleUtil {
 
             @Override
             public void onClick(View v) {
+                arcBubble.performClick();
                 Intent it = new Intent(currActivity, NoteListActivity.class);
                 currActivity.startActivity(it);
             }
@@ -88,6 +86,7 @@ public class ArcBubbleUtil {
 
             @Override
             public void onClick(View v) {
+                arcBubble.performClick();
                 Intent it = new Intent(currActivity, CombatTabActivity.class);
                 currActivity.startActivity(it);
             }
@@ -97,6 +96,4 @@ public class ArcBubbleUtil {
                 .addSubActionView(button3).addSubActionView(button4).attachTo(arcBubble).setRadius(500).build();
 
     }
-
-
 }
