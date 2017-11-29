@@ -334,7 +334,7 @@
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginRight="10dp"
-                    android:layout_marginLeft="35dp"
+                    android:layout_marginLeft="25dp"
                     android:src="@drawable/heart" />
 
                 <EditText
@@ -441,7 +441,7 @@
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginRight="10dp"
-                    android:layout_marginLeft="35dp"
+                    android:layout_marginLeft="25dp"
                     android:paddingLeft="-8dp"
                     android:layout_weight="0.10"
                     android:layout_gravity="bottom"
@@ -508,7 +508,7 @@
                 android:layout_gravity="center_vertical"
                 android:src="@drawable/skull_and_bones"
                 android:layout_marginRight="10dp"
-                android:layout_marginLeft="30dp"/>
+                android:layout_marginLeft="20dp"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
