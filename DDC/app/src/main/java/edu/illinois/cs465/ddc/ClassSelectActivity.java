@@ -33,10 +33,17 @@ public class ClassSelectActivity extends Activity implements View.OnClickListene
         super.onCreate(savedInstanceState);
         setContentView(R.layout.race_class_select);
 
+        initPageTitle();
         initButtons();
         initPortraitViewPager();
         initClassNameView();
         classNameView = (TextView) findViewById(R.id.race_class_name);
+    }
+
+    // Set the page title to be select class
+    private void initPageTitle() {
+        TextView pageTitle = (TextView) findViewById(R.id.race_class_header);
+        pageTitle.setText("Select Class");
     }
 
     // Initialize button variables and button event listeners for each button on the page

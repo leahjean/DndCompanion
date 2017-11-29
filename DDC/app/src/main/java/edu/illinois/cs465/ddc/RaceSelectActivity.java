@@ -33,11 +33,18 @@ public class RaceSelectActivity extends Activity implements View.OnClickListener
         super.onCreate(savedInstanceState);
         setContentView(R.layout.race_class_select);
 
+        initPageTitle();
         initButtons();
         initTooltipTexts();
         initPortraitViewPager();
         initRaceNameView();
         raceNameView = (TextView) findViewById(R.id.race_class_name);
+    }
+
+    // Set the page title to be select race
+    private void initPageTitle() {
+        TextView pageTitle = (TextView) findViewById(R.id.race_class_header);
+        pageTitle.setText("Select Race");
     }
 
     // Initialize button variables and button event listeners for each button on the page

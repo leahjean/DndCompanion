@@ -5,6 +5,16 @@
     android:gravity="center"
     android:layout_height="match_parent">
 
+    <TextView
+        android:id="@+id/race_class_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:gravity="center" />
+
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"

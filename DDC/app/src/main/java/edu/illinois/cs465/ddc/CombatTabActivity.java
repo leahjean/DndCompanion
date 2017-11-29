@@ -8,13 +8,8 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ExpandableListView;
 import android.widget.ImageButton;
 import android.widget.TextView;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
 
 public class CombatTabActivity extends FragmentActivity {
     ViewPager mViewPager;
@@ -23,7 +18,7 @@ public class CombatTabActivity extends FragmentActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.test);
+        setContentView(R.layout.activity_combat);
 
         ArcBubbleUtil.createArcBubble(this);
 
