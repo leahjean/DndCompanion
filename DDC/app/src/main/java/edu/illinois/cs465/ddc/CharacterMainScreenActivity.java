@@ -17,6 +17,7 @@ public class CharacterMainScreenActivity extends Activity implements View.OnClic
 
     private ExpandableListView listView;
     private ExpandableListAdapter listAdapter;
+    private List<Integer> listDataImages;
     private List<String> listDataHeader;
     private HashMap<String, List<String>> listHash;
 
@@ -27,7 +28,7 @@ public class CharacterMainScreenActivity extends Activity implements View.OnClic
 
         listView = (ExpandableListView) findViewById(R.id.msExpandaButton);
         initData();
-        listAdapter = new ExpandableListAdapter(this, listDataHeader, listHash);
+        listAdapter = new ExpandableListAdapter(this, listDataHeader, listHash, listDataImages);
         listView.setAdapter(listAdapter);
 
         ImageButton backbtn = findViewById(R.id.main_screen_backbtn);
@@ -42,6 +43,14 @@ public class CharacterMainScreenActivity extends Activity implements View.OnClic
     private void initData() {
         listDataHeader = new ArrayList<>();
         listHash = new HashMap<>();
+        listDataImages = new ArrayList<>();
+
+        listDataImages.add(R.drawable.strength);
+        listDataImages.add(R.drawable.constitution);
+        listDataImages.add(R.drawable.dexterity);
+        listDataImages.add(R.drawable.intelligence);
+        listDataImages.add(R.drawable.wisdom);
+        listDataImages.add(R.drawable.charisma);
 
         listDataHeader.add("STR: +3");
         listDataHeader.add("CON: +1");
