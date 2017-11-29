@@ -54,6 +54,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="50dp"
             android:layout_width="match_parent"
+            android:inputType="number"
             android:text="375"/>
 
         <!--<Button-->
@@ -99,6 +100,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="50dp"
             android:layout_width="match_parent"
+            android:inputType="number"
             android:text="8"/>
 
         <!--<Button-->
@@ -144,6 +146,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="50dp"
             android:layout_width="match_parent"
+            android:inputType="number"
             android:text="8"/>
 
         <!--<Button-->
@@ -189,6 +192,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="50dp"
             android:layout_width="match_parent"
+            android:inputType="number"
             android:text="1001"/>
 
         <!--<Button-->
