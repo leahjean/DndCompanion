@@ -43,7 +43,7 @@ public class ArcBubbleUtil {
 
         SubActionButton.Builder itemBuilder = new SubActionButton.Builder(currActivity);
         itemBuilder.setBackgroundDrawable(currActivity.getResources().getDrawable(R.drawable.blue_circle_selector));
-        FrameLayout.LayoutParams blueCircleSize = new FrameLayout.LayoutParams(200, 200);
+        FrameLayout.LayoutParams blueCircleSize = new FrameLayout.LayoutParams((int)0.15*w, (int)0.15*w);
         itemBuilder.setLayoutParams(blueCircleSize);
 
         ImageView itemIcon1 = new ImageView(currActivity);
