@@ -2,6 +2,7 @@ package edu.illinois.cs465.ddc;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
@@ -28,7 +29,14 @@ public class ArcBubbleUtil {
     public static void createArcBubble(final Activity currActivity){
         ImageView arcIcon = new ImageView(currActivity);
         arcIcon.setImageResource(R.drawable.menu_icon);
-        FrameLayout.LayoutParams redCircleSize = new FrameLayout.LayoutParams(250,250);
+
+
+        int w = Resources.getSystem().getDisplayMetrics().widthPixels;
+        //int h = Resources.getSystem().getDisplayMetrics().heightPixels;
+
+//250, 250
+        FrameLayout.LayoutParams redCircleSize = new FrameLayout.LayoutParams((int)(0.2*w),(int)(0.2*w));
+
         final FloatingActionButton arcBubble = new FloatingActionButton.Builder(currActivity).setBackgroundDrawable(R.drawable.red_circle_selector).setContentView(arcIcon).build();
         arcBubble.setLayoutParams(redCircleSize);
         arcBubble.setPosition(FloatingActionButton.POSITION_BOTTOM_RIGHT,redCircleSize);
