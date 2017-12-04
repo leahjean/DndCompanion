@@ -39,7 +39,7 @@ public class ArcBubbleUtil {
 
         SubActionButton.Builder itemBuilder = new SubActionButton.Builder(currActivity);
         itemBuilder.setBackgroundDrawable(currActivity.getResources().getDrawable(R.drawable.blue_circle_selector));
-        FrameLayout.LayoutParams blueCircleSize = new FrameLayout.LayoutParams(200, 200);
+        FrameLayout.LayoutParams blueCircleSize = new FrameLayout.LayoutParams((int)(0.2*w), (int)(0.2*w));
         itemBuilder.setLayoutParams(blueCircleSize);
 
         ImageView itemIcon1 = new ImageView(currActivity);
@@ -98,7 +98,7 @@ public class ArcBubbleUtil {
         });
 
         FloatingActionMenu arcMenu = new FloatingActionMenu.Builder(currActivity).addSubActionView(button1).addSubActionView(button2)
-                .addSubActionView(button3).addSubActionView(button4).attachTo(arcBubble).setRadius(500).build();
+                .addSubActionView(button3).addSubActionView(button4).attachTo(arcBubble).setRadius((int)(0.4*w)).build();
 
     }
 }
