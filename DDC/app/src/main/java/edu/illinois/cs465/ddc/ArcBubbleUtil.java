@@ -13,6 +13,8 @@ import com.oguzdev.circularfloatingactionmenu.library.FloatingActionButton;
 import com.oguzdev.circularfloatingactionmenu.library.FloatingActionMenu;
 import com.oguzdev.circularfloatingactionmenu.library.SubActionButton;
 
+import static android.R.attr.screenSize;
+
 /**
  * Arc Bubble implementation. Call createArcBubble in onCreate() to add arc bubble to any screen.
  */
@@ -26,7 +28,6 @@ public class ArcBubbleUtil {
     public static void createArcBubble(final Activity currActivity){
         ImageView arcIcon = new ImageView(currActivity);
         arcIcon.setImageResource(R.drawable.menu_icon);
-
         FrameLayout.LayoutParams redCircleSize = new FrameLayout.LayoutParams(250,250);
         final FloatingActionButton arcBubble = new FloatingActionButton.Builder(currActivity).setBackgroundDrawable(R.drawable.red_circle_selector).setContentView(arcIcon).build();
         arcBubble.setLayoutParams(redCircleSize);
