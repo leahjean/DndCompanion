@@ -15,6 +15,7 @@ public class SuppliesActivity extends Activity {
     private ExpandableListAdapter listAdapter;
     private List<String> listDataHeader;
     private HashMap<String, List<String>> listHash;
+    private List<Integer> listImages;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +24,7 @@ public class SuppliesActivity extends Activity {
 
         listView = (ExpandableListView) findViewById(R.id.suppliesExpandaButton);
         initData();
-        listAdapter = new ExpandableListAdapter(this, listDataHeader, listHash);
+        listAdapter = new ExpandableListAdapter(this, listDataHeader, listHash, listImages);
         listView.setAdapter(listAdapter);
 
         // Initialize click listener for the back button
@@ -42,12 +43,18 @@ public class SuppliesActivity extends Activity {
     private void initData() {
         listDataHeader = new ArrayList<>();
         listHash = new HashMap<>();
+        listImages = new ArrayList<>();
 
         listDataHeader.add("Rations (x16)");
         listDataHeader.add("Potion of Major Healing");
         listDataHeader.add("Silken Rope (50ft)");
         listDataHeader.add("Hand Mirror");
 
+        listImages.add(R.drawable.porridge);
+        listImages.add(R.drawable.health_potion);
+        listImages.add(R.drawable.rope);
+        listImages.add(R.drawable.mirror);
+        
         List<String> rationDesc = new ArrayList<>();
         rationDesc.add("Enough food for a one-person meal.");
         rationDesc.add("This won't stay fresh for long!");
