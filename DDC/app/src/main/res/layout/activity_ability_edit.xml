@@ -6,20 +6,33 @@
     android:layout_marginRight="40sp"
     android:orientation="vertical"
     android:gravity="center">
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:orientation="vertical"
         android:layout_height="0dp"
-        android:layout_weight="8.5"
+        android:layout_marginBottom="20dp"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp">
+        android:layout_weight="8.5"
+        android:orientation="vertical">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:text="Skill Proficiencies"
-            android:textStyle="bold"
             android:textSize="30dp"
-            android:gravity="center"/>
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="Select: 4"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
 
         <ScrollView
             android:layout_width="match_parent"
@@ -30,16 +43,32 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:paddingBottom="20dp"
-                android:orientation="vertical"
                 android:clickable="true"
-                android:focusableInTouchMode="true">
+                android:focusableInTouchMode="true"
+                android:orientation="vertical"
+                android:paddingBottom="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:text="Strength"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/brown"
+                    android:orientation="horizontal" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="1"
                     android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
                     android:orientation="horizontal">
 
                     <TextView
@@ -49,7 +78,7 @@
                         android:layout_gravity="left"
                         android:gravity="left|center_vertical"
                         android:text="Athletics"
-                        android:textSize="15dp"
+                        android:textSize="20dp"
                         android:textStyle="bold" />
 
                     <LinearLayout
@@ -60,16 +89,35 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:gravity="center" />
+                            android:gravity="center"
+                            android:scaleX="1.5"
+                            android:scaleY="1.5" />
                     </LinearLayout>
 
                 </LinearLayout>
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="left|center_vertical"
+                    android:text="Dexterity"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/brown"
+                    android:orientation="horizontal" />
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="1"
                     android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
                     android:orientation="horizontal">
 
                     <TextView
@@ -79,7 +127,7 @@
                         android:layout_gravity="left"
                         android:gravity="left|center_vertical"
                         android:text="Acrobatics"
-                        android:textSize="15dp"
+                        android:textSize="20dp"
                         android:textStyle="bold" />
 
                     <LinearLayout
@@ -90,7 +138,9 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:gravity="center" />
+                            android:gravity="center"
+                            android:scaleX="1.5"
+                            android:scaleY="1.5" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -98,8 +148,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="1"
                     android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
                     android:orientation="horizontal">
 
                     <TextView
@@ -109,7 +159,7 @@
                         android:layout_gravity="left"
                         android:gravity="left|center_vertical"
                         android:text="Sleight of Hand"
-                        android:textSize="15dp"
+                        android:textSize="20dp"
                         android:textStyle="bold" />
 
                     <LinearLayout
@@ -120,7 +170,9 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:gravity="center" />
+                            android:gravity="center"
+                            android:scaleX="1.5"
+                            android:scaleY="1.5" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -128,8 +180,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="1"
                     android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
                     android:orientation="horizontal">
 
                     <TextView
@@ -139,7 +191,7 @@
                         android:layout_gravity="left"
                         android:gravity="left|center_vertical"
                         android:text="Stealth"
-                        android:textSize="15dp"
+                        android:textSize="20dp"
                         android:textStyle="bold" />
 
                     <LinearLayout
@@ -150,16 +202,35 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:gravity="center" />
+                            android:gravity="center"
+                            android:scaleX="1.5"
+                            android:scaleY="1.5" />
                     </LinearLayout>
 
                 </LinearLayout>
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="left|center_vertical"
+                    android:text="Intelligence"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/brown"
+                    android:orientation="horizontal" />
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="1"
                     android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
                     android:orientation="horizontal">
 
                     <TextView
@@ -169,8 +240,8 @@
                         android:layout_gravity="left"
                         android:gravity="left|center_vertical"
                         android:text="Arcana"
-                        android:textSize="15dp"
-                        android:textStyle="bold" />
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
 
                     <LinearLayout
                         android:layout_width="fill_parent"
@@ -180,7 +251,9 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:gravity="center" />
+                            android:gravity="center"
+                            android:scaleX="1.5"
+                            android:scaleY="1.5" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -188,8 +261,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="1"
                     android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
                     android:orientation="horizontal">
 
                     <TextView
@@ -199,7 +272,7 @@
                         android:layout_gravity="left"
                         android:gravity="left|center_vertical"
                         android:text="History"
-                        android:textSize="15dp"
+                        android:textSize="20dp"
                         android:textStyle="bold" />
 
                     <LinearLayout
@@ -210,7 +283,9 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:gravity="center" />
+                            android:gravity="center"
+                            android:scaleX="1.5"
+                            android:scaleY="1.5" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -218,8 +293,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="1"
                     android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
                     android:orientation="horizontal">
 
                     <TextView
@@ -229,7 +304,7 @@
                         android:layout_gravity="left"
                         android:gravity="left|center_vertical"
                         android:text="Investigation"
-                        android:textSize="15dp"
+                        android:textSize="20dp"
                         android:textStyle="bold" />
 
                     <LinearLayout
@@ -240,7 +315,9 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:gravity="center" />
+                            android:gravity="center"
+                            android:scaleX="1.5"
+                            android:scaleY="1.5" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -248,8 +325,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="1"
                     android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
                     android:orientation="horizontal">
 
                     <TextView
@@ -259,7 +336,7 @@
                         android:layout_gravity="left"
                         android:gravity="left|center_vertical"
                         android:text="Nature"
-                        android:textSize="15dp"
+                        android:textSize="20dp"
                         android:textStyle="bold" />
 
                     <LinearLayout
@@ -270,7 +347,9 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:gravity="center" />
+                            android:gravity="center"
+                            android:scaleX="1.5"
+                            android:scaleY="1.5" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -278,8 +357,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="1"
                     android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
                     android:orientation="horizontal">
 
                     <TextView
@@ -289,7 +368,7 @@
                         android:layout_gravity="left"
                         android:gravity="left|center_vertical"
                         android:text="Religion"
-                        android:textSize="15dp"
+                        android:textSize="20dp"
                         android:textStyle="bold" />
 
                     <LinearLayout
@@ -300,16 +379,35 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:gravity="center" />
+                            android:gravity="center"
+                            android:scaleX="1.5"
+                            android:scaleY="1.5" />
                     </LinearLayout>
 
                 </LinearLayout>
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="left|center_vertical"
+                    android:text="Wisdom"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/brown"
+                    android:orientation="horizontal" />
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="1"
                     android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
                     android:orientation="horizontal">
 
                     <TextView
@@ -319,7 +417,7 @@
                         android:layout_gravity="left"
                         android:gravity="left|center_vertical"
                         android:text="Animal Handling"
-                        android:textSize="15dp"
+                        android:textSize="20dp"
                         android:textStyle="bold" />
 
                     <LinearLayout
@@ -330,7 +428,9 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:gravity="center" />
+                            android:gravity="center"
+                            android:scaleX="1.5"
+                            android:scaleY="1.5" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -338,8 +438,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="1"
                     android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
                     android:orientation="horizontal">
 
                     <TextView
@@ -349,7 +449,7 @@
                         android:layout_gravity="left"
                         android:gravity="left|center_vertical"
                         android:text="Insight"
-                        android:textSize="15dp"
+                        android:textSize="20dp"
                         android:textStyle="bold" />
 
                     <LinearLayout
@@ -360,7 +460,9 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:gravity="center" />
+                            android:gravity="center"
+                            android:scaleX="1.5"
+                            android:scaleY="1.5" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -368,8 +470,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="1"
                     android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
                     android:orientation="horizontal">
 
                     <TextView
@@ -379,7 +481,7 @@
                         android:layout_gravity="left"
                         android:gravity="left|center_vertical"
                         android:text="Medicine"
-                        android:textSize="15dp"
+                        android:textSize="20dp"
                         android:textStyle="bold" />
 
                     <LinearLayout
@@ -390,7 +492,9 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:gravity="center" />
+                            android:gravity="center"
+                            android:scaleX="1.5"
+                            android:scaleY="1.5" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -398,8 +502,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="1"
                     android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
                     android:orientation="horizontal">
 
                     <TextView
@@ -409,7 +513,7 @@
                         android:layout_gravity="left"
                         android:gravity="left|center_vertical"
                         android:text="Perception"
-                        android:textSize="15dp"
+                        android:textSize="20dp"
                         android:textStyle="bold" />
 
                     <LinearLayout
@@ -420,7 +524,9 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:gravity="center" />
+                            android:gravity="center"
+                            android:scaleX="1.5"
+                            android:scaleY="1.5" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -428,8 +534,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="1"
                     android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
                     android:orientation="horizontal">
 
                     <TextView
@@ -439,7 +545,7 @@
                         android:layout_gravity="left"
                         android:gravity="left|center_vertical"
                         android:text="Survival"
-                        android:textSize="15dp"
+                        android:textSize="20dp"
                         android:textStyle="bold" />
 
                     <LinearLayout
@@ -450,16 +556,35 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:gravity="center" />
+                            android:gravity="center"
+                            android:scaleX="1.5"
+                            android:scaleY="1.5" />
                     </LinearLayout>
 
                 </LinearLayout>
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="left|center_vertical"
+                    android:text="Charisma"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/brown"
+                    android:orientation="horizontal" />
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="1"
                     android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
                     android:orientation="horizontal">
 
                     <TextView
@@ -469,7 +594,7 @@
                         android:layout_gravity="left"
                         android:gravity="left|center_vertical"
                         android:text="Deception"
-                        android:textSize="15dp"
+                        android:textSize="20dp"
                         android:textStyle="bold" />
 
                     <LinearLayout
@@ -480,7 +605,9 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:gravity="center" />
+                            android:gravity="center"
+                            android:scaleX="1.5"
+                            android:scaleY="1.5" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -488,8 +615,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="1"
                     android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
                     android:orientation="horizontal">
 
                     <TextView
@@ -499,7 +626,7 @@
                         android:layout_gravity="left"
                         android:gravity="left|center_vertical"
                         android:text="Intimidation"
-                        android:textSize="15dp"
+                        android:textSize="20dp"
                         android:textStyle="bold" />
 
                     <LinearLayout
@@ -510,7 +637,9 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:gravity="center" />
+                            android:gravity="center"
+                            android:scaleX="1.5"
+                            android:scaleY="1.5" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -518,8 +647,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="1"
                     android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
                     android:orientation="horizontal">
 
                     <TextView
@@ -529,7 +658,7 @@
                         android:layout_gravity="left"
                         android:gravity="left|center_vertical"
                         android:text="Performance"
-                        android:textSize="15dp"
+                        android:textSize="20dp"
                         android:textStyle="bold" />
 
                     <LinearLayout
@@ -540,7 +669,9 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:gravity="center" />
+                            android:gravity="center"
+                            android:scaleX="1.5"
+                            android:scaleY="1.5" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -548,8 +679,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="1"
                     android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
                     android:orientation="horizontal">
 
                     <TextView
@@ -559,7 +690,7 @@
                         android:layout_gravity="left"
                         android:gravity="left|center_vertical"
                         android:text="Persuasion"
-                        android:textSize="15dp"
+                        android:textSize="20dp"
                         android:textStyle="bold" />
 
                     <LinearLayout
@@ -570,7 +701,9 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:gravity="center" />
+                            android:gravity="center"
+                            android:scaleX="1.5"
+                            android:scaleY="1.5" />
                     </LinearLayout>
 
                 </LinearLayout>
