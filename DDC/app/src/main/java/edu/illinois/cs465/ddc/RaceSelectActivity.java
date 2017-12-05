@@ -39,6 +39,14 @@ public class RaceSelectActivity extends Activity implements View.OnClickListener
         initPortraitViewPager();
         initRaceNameView();
         raceNameView = (TextView) findViewById(R.id.race_class_name);
+
+        // Display initial tooltip
+        new SimpleTooltip.Builder(getApplicationContext())
+                        .anchorView(raceNameView)
+                        .text("Welcome to character creation! Click here for more details about this race.")
+                        .gravity(Gravity.TOP)
+                        .build()
+                        .show();
     }
 
     // Set the page title to be select race

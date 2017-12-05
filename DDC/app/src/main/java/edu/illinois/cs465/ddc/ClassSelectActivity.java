@@ -38,6 +38,14 @@ public class ClassSelectActivity extends Activity implements View.OnClickListene
         initPortraitViewPager();
         initClassNameView();
         classNameView = (TextView) findViewById(R.id.race_class_name);
+
+        // Display initial tooltip
+        new SimpleTooltip.Builder(getApplicationContext())
+                .anchorView(classNameView)
+                .text("Click here for more details about this class.")
+                .gravity(Gravity.TOP)
+                .build()
+                .show();
     }
 
     // Set the page title to be select class

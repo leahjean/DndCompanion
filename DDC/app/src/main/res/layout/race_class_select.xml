@@ -80,7 +80,7 @@
 
         <Button
             android:id="@+id/race_class_next_page_btn"
-            android:text="@string/next"
+            android:text="@string/select"
             style="@style/RaceClassNextBackBtn"
             android:background="@drawable/expandable_button_background"/>
     </LinearLayout>

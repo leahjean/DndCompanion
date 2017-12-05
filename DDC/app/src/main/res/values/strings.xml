@@ -2,6 +2,8 @@
     <string name="app_name">DDC</string>
     <string name="back">Back</string>
     <string name="next">Next</string>
+    <string name="submit">Submit</string>
+    <string name="select">Select</string>
     <string name="background_edittext_hint"><b>Type in your character background!</b></string>
     <string name="note_hint"><b>Note...</b></string>
     <string name="details">Details</string>
