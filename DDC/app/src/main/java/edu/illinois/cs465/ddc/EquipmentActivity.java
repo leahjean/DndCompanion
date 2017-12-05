@@ -17,6 +17,7 @@ public class EquipmentActivity extends Activity implements View.OnClickListener 
     private ExpandableListAdapter listAdapter;
     private List<String> listDataHeader;
     private HashMap<String, List<String>> listHash;
+    private List<Integer> listImages;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +29,7 @@ public class EquipmentActivity extends Activity implements View.OnClickListener 
 
         listView = (ExpandableListView) findViewById(R.id.equipmentExpandaButton);
         initData();
-        listAdapter = new ExpandableListAdapter(this, listDataHeader, listHash);
+        listAdapter = new ExpandableListAdapter(this, listDataHeader, listHash, listImages);
         listView.setAdapter(listAdapter);
 
         // Initialize arc bubble
@@ -38,6 +39,12 @@ public class EquipmentActivity extends Activity implements View.OnClickListener 
     private void initData() {
         listDataHeader = new ArrayList<>();
         listHash = new HashMap<>();
+        listImages = new ArrayList<>();
+
+        listImages.add(R.drawable.leather_armor);
+        listImages.add(R.drawable.iron_dagger);
+        listImages.add(R.drawable.longbow);
+        listImages.add(R.drawable.quiver);
 
         listDataHeader.add("Leather Armor");
         listDataHeader.add("Iron Dagger");

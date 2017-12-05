@@ -15,6 +15,7 @@ import com.oguzdev.circularfloatingactionmenu.library.FloatingActionMenu;
 import com.oguzdev.circularfloatingactionmenu.library.SubActionButton;
 
 import static android.R.attr.screenSize;
+import static java.lang.Math.min;
 
 /**
  * Arc Bubble implementation. Call createArcBubble in onCreate() to add arc bubble to any screen.
@@ -31,11 +32,10 @@ public class ArcBubbleUtil {
         arcIcon.setImageResource(R.drawable.menu_icon);
 
 
-        int w = Resources.getSystem().getDisplayMetrics().widthPixels;
-        //int h = Resources.getSystem().getDisplayMetrics().heightPixels;
+        int scale_factor = min(Resources.getSystem().getDisplayMetrics().widthPixels, Resources.getSystem().getDisplayMetrics().heightPixels);
 
 //250, 250
-        FrameLayout.LayoutParams redCircleSize = new FrameLayout.LayoutParams((int)(0.2*w),(int)(0.2*w));
+        FrameLayout.LayoutParams redCircleSize = new FrameLayout.LayoutParams((int)(0.2*scale_factor),(int)(0.2*scale_factor));
 
         final FloatingActionButton arcBubble = new FloatingActionButton.Builder(currActivity).setBackgroundDrawable(R.drawable.red_circle_selector).setContentView(arcIcon).build();
         arcBubble.setLayoutParams(redCircleSize);
@@ -44,7 +44,7 @@ public class ArcBubbleUtil {
         SubActionButton.Builder itemBuilder = new SubActionButton.Builder(currActivity);
         itemBuilder.setBackgroundDrawable(currActivity.getResources().getDrawable(R.drawable.blue_circle_selector));
 
-        FrameLayout.LayoutParams blueCircleSize = new FrameLayout.LayoutParams((int)(0.2*w), (int)(0.2*w));
+        FrameLayout.LayoutParams blueCircleSize = new FrameLayout.LayoutParams((int)(0.2*scale_factor), (int)(0.2*scale_factor));
 
         itemBuilder.setLayoutParams(blueCircleSize);
 
@@ -104,7 +104,7 @@ public class ArcBubbleUtil {
         });
 
         FloatingActionMenu arcMenu = new FloatingActionMenu.Builder(currActivity).addSubActionView(button1).addSubActionView(button2)
-                .addSubActionView(button3).addSubActionView(button4).attachTo(arcBubble).setRadius((int)(0.4*w)).build();
+                .addSubActionView(button3).addSubActionView(button4).attachTo(arcBubble).setRadius((int)(0.4*scale_factor)).build();
 
     }
 }
