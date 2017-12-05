@@ -145,19 +145,23 @@ public class AbilityEditActivity extends Activity implements View.OnClickListene
     @Override
     public void onClick(View v) {
         Integer viewId = v.getId();
-        if (checkBoxIdsSet.contains(viewId)) {
-            if (selectedSkills.contains(viewId)) {
-                incrementRemainingSkillCount();
-                selectedSkills.remove(viewId);
-            } else {
-                if (selectedSkills.size() < maxSkillCount) {
-                    decrementRemainingSkillCount();
-                    selectedSkills.add(viewId);
-                } else {
-                    return;
-                }
-            }
-        }
+//        if (checkBoxIdsSet.contains(viewId)) {
+//            if (selectedSkills.contains(viewId)) {
+//                incrementRemainingSkillCount();
+//                selectedSkills.remove(viewId);
+//            } else {
+//                if (selectedSkills.size() < maxSkillCount) {
+//                    decrementRemainingSkillCount();
+//                    selectedSkills.add(viewId);
+//                }
+//            }
+//
+//            if (selectedSkills.size() == maxSkillCount) {
+//                for (Integer id : checkBoxIdsSet) {
+//
+//                }
+//            }
+//        }
 
         switch (viewId){
             case R.id.athletics_label:
