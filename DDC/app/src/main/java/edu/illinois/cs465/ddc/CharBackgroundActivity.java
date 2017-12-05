@@ -24,7 +24,8 @@ public class CharBackgroundActivity extends Activity implements View.OnClickList
         setContentView(R.layout.activity_char_background);
 
         initButtons();
-        initEditText();
+        initEditText(R.id.name_edit_text);
+        initEditText(R.id.background_input_field);
     }
 
     // Initialize button variables and button event listeners for each button on the page
@@ -36,9 +37,9 @@ public class CharBackgroundActivity extends Activity implements View.OnClickList
         nextPageBtn.setOnClickListener(this);
     }
 
-    // Initialize editText event listeners
-    private void initEditText() {
-        editText = (EditText) findViewById(R.id.background_input_field);
+    // Initialize editText event listeners for the edittext with given id
+    private void initEditText(Integer id) {
+        editText = (EditText) findViewById(id);
         editText.setOnClickListener(this);
 
         editText.setOnFocusChangeListener(new View.OnFocusChangeListener() {

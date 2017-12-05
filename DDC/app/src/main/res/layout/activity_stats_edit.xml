@@ -14,6 +14,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp">
         <TextView
+            android:id="@+id/ability_score_header"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Ability Scores"
@@ -32,6 +33,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="1">
                 <ImageView
+                    android:id="@+id/strength_icon"
                     android:layout_width="50dp"
                     android:layout_height="match_parent"
                     android:src="@drawable/strength"/>
@@ -68,6 +70,7 @@
                 android:layout_weight="1">
 
                 <ImageView
+                    android:id="@+id/dexterity_icon"
                     android:layout_width="50dp"
                     android:layout_height="match_parent"
                     android:src="@drawable/dexterity"/>
@@ -104,6 +107,7 @@
                 android:layout_weight="1">
 
                 <ImageView
+                    android:id="@+id/constitution_icon"
                     android:layout_width="50dp"
                     android:layout_height="match_parent"
                     android:src="@drawable/constitution"/>
@@ -139,6 +143,7 @@
                 android:layout_weight="1">
 
                 <ImageView
+                    android:id="@+id/intelligence_icon"
                     android:layout_width="50dp"
                     android:layout_height="match_parent"
                     android:src="@drawable/intelligence"/>
@@ -174,6 +179,7 @@
                 android:layout_weight="1">
 
                 <ImageView
+                    android:id="@+id/wisdom_icon"
                     android:layout_width="50dp"
                     android:layout_height="match_parent"
                     android:src="@drawable/wisdom"/>
@@ -209,6 +215,7 @@
                 android:layout_weight="1">
 
                 <ImageView
+                    android:id="@+id/charisma_icon"
                     android:layout_width="50dp"
                     android:layout_height="match_parent"
                     android:src="@drawable/charisma"/>

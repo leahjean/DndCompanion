@@ -2,22 +2,35 @@ package edu.illinois.cs465.ddc;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.annotation.BoolRes;
+import android.support.annotation.IntegerRes;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
+import android.widget.CheckBox;
 import android.widget.TextView;
 
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
+
+import io.github.douglasjunior.androidSimpleTooltip.SimpleTooltip;
+
 import static edu.illinois.cs465.ddc.GeneralUtil.addSimpleTooltip;
-import static edu.illinois.cs465.ddc.GeneralUtil.addSimpleTooltipListener;
 import static edu.illinois.cs465.ddc.GeneralUtil.tooltipTexts;
 
 /**
  * Character Creation screen to edit initial abilities
  */
 public class AbilityEditActivity extends Activity implements View.OnClickListener{
+    private Set<Integer> selectedSkills = new HashSet<>();
+    Integer maxSkillCount = 4;
+    Integer remainingSkillCount;
+    TextView remainingSkillCountView;
+    private Set<Integer> checkBoxIdsSet;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,12 +43,48 @@ public class AbilityEditActivity extends Activity implements View.OnClickListene
         back_button = (Button) findViewById(R.id.stats_edit_back_page_btn);
         back_button.setOnClickListener(this);
 
+        initRemainingSkillCount();
         bindLabelClickListeners();
+        bindCheckboxClickListeners();
+
+        // Display initial tooltip
+        TextView header = (TextView) findViewById(R.id.skill_proficiencies_header);
+        new SimpleTooltip.Builder(getApplicationContext())
+                .anchorView(header)
+                .text("Select the skills you'd like to be proficient in! Tap the skill names to view more details.")
+                .gravity(Gravity.BOTTOM)
+                .build()
+                .show();
+    }
+
+    // Initialize remaining skill count
+    private void initRemainingSkillCount() {
+        remainingSkillCountView = (TextView) findViewById(R.id.remaining_skill_count);
+        remainingSkillCount = maxSkillCount;
+        updateRemainingSkillCountMsg();
+    }
+
+    // Decrement the remaining skill count when a skill is selected
+    private void decrementRemainingSkillCount() {
+        remainingSkillCount -= 1;
+        updateRemainingSkillCountMsg();
+    }
+
+    // Increment the remaining skill count when a skill is selected
+    private void incrementRemainingSkillCount() {
+        remainingSkillCount += 1;
+        updateRemainingSkillCountMsg();
+    }
+
+    // Update the remaining skills message on load, decrement, or increment
+    private void updateRemainingSkillCountMsg() {
+        String msg = "Select: " + Integer.toString(remainingSkillCount);
+        remainingSkillCountView.setText(msg);
     }
 
     // Bind click listeners for every label so that tooltips appear on click
     private void bindLabelClickListeners() {
-        int[] labelIds = {
+        Integer[] labelIds = {
                 R.id.athletics_label,
                 R.id.acrobatics_label,
                 R.id.sleight_of_hand_label,
@@ -62,9 +111,55 @@ public class AbilityEditActivity extends Activity implements View.OnClickListene
         }
     }
 
+    // Bind click listeners for every checkbox so that tooltips appear on click
+    private void bindCheckboxClickListeners() {
+        Integer[] checkboxIds = {
+                R.id.athletics_checkbox,
+                R.id.acrobatics_checkbox,
+                R.id.sleight_of_hand_checkbox,
+                R.id.stealth_checkbox,
+                R.id.arcana_checkbox,
+                R.id.history_checkbox,
+                R.id.investigation_checkbox,
+                R.id.nature_checkbox,
+                R.id.religion_checkbox,
+                R.id.animal_handling_checkbox,
+                R.id.insight_checkbox,
+                R.id.medicine_checkbox,
+                R.id.perception_checkbox,
+                R.id.survival_checkbox,
+                R.id.deception_checkbox,
+                R.id.intimidation_checkbox,
+                R.id.performance_checkbox,
+                R.id.persuasion_checkbox
+        };
+
+        checkBoxIdsSet = new HashSet<Integer>(Arrays.asList(checkboxIds));
+
+        for (int checkboxId : checkboxIds) {
+            CheckBox checkbox = (CheckBox) findViewById(checkboxId);
+            checkbox.setOnClickListener(this);
+        }
+    }
+
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
+        Integer viewId = v.getId();
+        if (checkBoxIdsSet.contains(viewId)) {
+            if (selectedSkills.contains(viewId)) {
+                incrementRemainingSkillCount();
+                selectedSkills.remove(viewId);
+            } else {
+                if (selectedSkills.size() < maxSkillCount) {
+                    decrementRemainingSkillCount();
+                    selectedSkills.add(viewId);
+                } else {
+                    return;
+                }
+            }
+        }
+
+        switch (viewId){
             case R.id.athletics_label:
                 addSimpleTooltip(this, v, tooltipTexts.get("athletics"), Gravity.BOTTOM);
                 break;

@@ -16,6 +16,7 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/skill_proficiencies_header"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -25,11 +26,11 @@
             android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/remaining_skill_count"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:gravity="center"
-            android:text="Select: 4"
             android:textColor="@color/black"
             android:textSize="20dp"
             android:textStyle="bold" />
@@ -87,6 +88,7 @@
                         android:gravity="right">
 
                         <CheckBox
+                            android:id="@+id/athletics_checkbox"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:gravity="center"
@@ -136,6 +138,7 @@
                         android:gravity="right">
 
                         <CheckBox
+                            android:id="@+id/acrobatics_checkbox"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:gravity="center"
@@ -168,6 +171,7 @@
                         android:gravity="right">
 
                         <CheckBox
+                            android:id="@+id/sleight_of_hand_checkbox"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:gravity="center"
@@ -200,6 +204,7 @@
                         android:gravity="right">
 
                         <CheckBox
+                            android:id="@+id/stealth_checkbox"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:gravity="center"
@@ -249,6 +254,7 @@
                         android:gravity="right">
 
                         <CheckBox
+                            android:id="@+id/arcana_checkbox"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:gravity="center"
@@ -281,6 +287,7 @@
                         android:gravity="right">
 
                         <CheckBox
+                            android:id="@+id/history_checkbox"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:gravity="center"
@@ -313,6 +320,7 @@
                         android:gravity="right">
 
                         <CheckBox
+                            android:id="@+id/investigation_checkbox"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:gravity="center"
@@ -345,6 +353,7 @@
                         android:gravity="right">
 
                         <CheckBox
+                            android:id="@+id/nature_checkbox"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:gravity="center"
@@ -377,6 +386,7 @@
                         android:gravity="right">
 
                         <CheckBox
+                            android:id="@+id/religion_checkbox"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:gravity="center"
@@ -426,6 +436,7 @@
                         android:gravity="right">
 
                         <CheckBox
+                            android:id="@+id/animal_handling_checkbox"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:gravity="center"
@@ -458,6 +469,7 @@
                         android:gravity="right">
 
                         <CheckBox
+                            android:id="@+id/insight_checkbox"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:gravity="center"
@@ -490,6 +502,7 @@
                         android:gravity="right">
 
                         <CheckBox
+                            android:id="@+id/medicine_checkbox"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:gravity="center"
@@ -522,6 +535,7 @@
                         android:gravity="right">
 
                         <CheckBox
+                            android:id="@+id/perception_checkbox"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:gravity="center"
@@ -554,6 +568,7 @@
                         android:gravity="right">
 
                         <CheckBox
+                            android:id="@+id/survival_checkbox"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:gravity="center"
@@ -603,6 +618,7 @@
                         android:gravity="right">
 
                         <CheckBox
+                            android:id="@+id/deception_checkbox"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:gravity="center"
@@ -635,6 +651,7 @@
                         android:gravity="right">
 
                         <CheckBox
+                            android:id="@+id/intimidation_checkbox"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:gravity="center"
@@ -667,6 +684,7 @@
                         android:gravity="right">
 
                         <CheckBox
+                            android:id="@+id/performance_checkbox"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:gravity="center"
@@ -699,6 +717,7 @@
                         android:gravity="right">
 
                         <CheckBox
+                            android:id="@+id/persuasion_checkbox"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:gravity="center"
