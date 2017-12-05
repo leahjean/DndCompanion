@@ -52,22 +52,22 @@ public class StatsEditActivity extends Activity implements View.OnClickListener 
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.strength_label:
-                addSimpleTooltip(this, v, tooltipTexts.get("STR"), Gravity.END);
+                addSimpleTooltip(this, v, tooltipTexts.get("STR"), Gravity.BOTTOM);
                 break;
             case R.id.dexterity_label:
-                addSimpleTooltip(this, v, tooltipTexts.get("DEX"), Gravity.END);
+                addSimpleTooltip(this, v, tooltipTexts.get("DEX"), Gravity.BOTTOM);
                 break;
             case R.id.constitution_label:
-                addSimpleTooltip(this, v, tooltipTexts.get("CON"), Gravity.END);
+                addSimpleTooltip(this, v, tooltipTexts.get("CON"), Gravity.BOTTOM);
                 break;
             case R.id.intelligence_label:
-                addSimpleTooltip(this, v, tooltipTexts.get("INT"), Gravity.END);
+                addSimpleTooltip(this, v, tooltipTexts.get("INT"), Gravity.BOTTOM);
                 break;
             case R.id.wisdom_label:
-                addSimpleTooltip(this, v, tooltipTexts.get("WIS"), Gravity.END);
+                addSimpleTooltip(this, v, tooltipTexts.get("WIS"), Gravity.BOTTOM);
                 break;
             case R.id.charisma_label:
-                addSimpleTooltip(this, v, tooltipTexts.get("CHA"), Gravity.END);
+                addSimpleTooltip(this, v, tooltipTexts.get("CHA"), Gravity.BOTTOM);
                 break;
             case R.id.stats_edit_back_page_btn:
                 this.finish();

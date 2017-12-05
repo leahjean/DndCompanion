@@ -18,6 +18,7 @@
             android:layout_height="wrap_content"
             android:text="Ability Scores"
             android:textStyle="bold"
+            android:textColor="@color/black"
             android:textSize="30dp"
             android:gravity="center"/>
         <LinearLayout
@@ -30,15 +31,21 @@
                 android:layout_marginTop="20dp"
                 android:layout_height="0dp"
                 android:layout_weight="1">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/strength"/>
 
                 <TextView
                     android:id="@+id/strength_label"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dp"
                     android:text="Strength"
                     android:textSize="20dp"
                     android:gravity="left|center_vertical"
                     android:layout_gravity="left"
+                    android:textColor="@color/black"
                     android:textStyle="bold"/>
 
                 <LinearLayout
@@ -59,14 +66,22 @@
                 android:orientation="horizontal"
                 android:layout_height="0dp"
                 android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/dexterity"/>
+
                 <TextView
                     android:id="@+id/dexterity_label"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
                     android:text="Dexterity"
                     android:textSize="20dp"
+                    android:layout_marginLeft="5dp"
                     android:gravity="left|center_vertical"
                     android:layout_gravity="left"
+                    android:textColor="@color/black"
                     android:textStyle="bold"/>
 
                 <LinearLayout
@@ -87,14 +102,21 @@
                 android:orientation="horizontal"
                 android:layout_height="0dp"
                 android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/constitution"/>
                 <TextView
                     android:id="@+id/constitution_label"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dp"
                     android:text="Constitution"
                     android:textSize="20dp"
                     android:gravity="left|center_vertical"
                     android:layout_gravity="left"
+                    android:textColor="@color/black"
                     android:textStyle="bold"/>
 
                 <LinearLayout
@@ -115,14 +137,21 @@
                 android:orientation="horizontal"
                 android:layout_height="0dp"
                 android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/intelligence"/>
                 <TextView
                     android:id="@+id/intelligence_label"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dp"
                     android:text="Intelligence"
                     android:textSize="20dp"
                     android:gravity="left|center_vertical"
                     android:layout_gravity="left"
+                    android:textColor="@color/black"
                     android:textStyle="bold"/>
 
                 <LinearLayout
@@ -143,14 +172,21 @@
                 android:orientation="horizontal"
                 android:layout_height="0dp"
                 android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/wisdom"/>
                 <TextView
                     android:id="@+id/wisdom_label"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dp"
                     android:text="Wisdom"
                     android:textSize="20dp"
                     android:gravity="left|center_vertical"
                     android:layout_gravity="left"
+                    android:textColor="@color/black"
                     android:textStyle="bold"/>
 
                 <LinearLayout
@@ -171,14 +207,21 @@
                 android:orientation="horizontal"
                 android:layout_height="0dp"
                 android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/charisma"/>
                 <TextView
                     android:id="@+id/charisma_label"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dp"
                     android:text="Charisma"
                     android:textSize="20dp"
                     android:gravity="left|center_vertical"
                     android:layout_gravity="left"
+                    android:textColor="@color/black"
                     android:textStyle="bold"/>
 
                 <LinearLayout
