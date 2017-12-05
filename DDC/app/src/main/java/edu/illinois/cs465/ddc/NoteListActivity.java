@@ -23,6 +23,7 @@ public class NoteListActivity extends Activity {
     private ExpandableListAdapter notesListAdapter;
     private List<String> listDataHeader;
     private HashMap<String, List<String>> listHash = new HashMap<>();
+    private List<Integer> listImages;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -33,7 +34,7 @@ public class NoteListActivity extends Activity {
         initHeaders();
         populateHeaders();
         initChildClickListener();
-        notesListAdapter = new ExpandableListAdapter(this, listDataHeader, listHash);
+        notesListAdapter = new ExpandableListAdapter(this, listDataHeader, listHash, listImages);
         notesListView.setAdapter(notesListAdapter);
 
         // Initialize click listener for the back button
@@ -58,6 +59,13 @@ public class NoteListActivity extends Activity {
                 "Character Nuances",
                 "List of My Favorite DMs"
         ));
+
+        listImages = new ArrayList<>();
+        listImages.add(R.drawable.note_image);
+        listImages.add(R.drawable.note_image);
+        listImages.add(R.drawable.note_image);
+        listImages.add(R.drawable.note_image);
+        listImages.add(R.drawable.note_image);
     }
 
     // Populate each header with a list of elements
@@ -74,7 +82,7 @@ public class NoteListActivity extends Activity {
         listHash.put(listDataHeader.get(1), new ArrayList<>(Arrays.asList(
                 "I ate an apple yesterday",
                 "I found a red shirt yesterday with stretched out sleeves",
-                "You think this mockup will get us an A?"
+                "You think this revised prototype will get us an A?"
         )));
 
         // Fantastic Beasts
