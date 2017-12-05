@@ -504,8 +504,8 @@
             android:layout_gravity="left">
 
             <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="57dp"
+                android:layout_height="57dp"
                 android:layout_gravity="center_vertical"
                 android:src="@drawable/skull_and_bones"
                 android:layout_marginRight="10dp"
@@ -524,7 +524,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="SUCCESSES: "/>
+                        android:text="PASS: "
+                        android:textSize="20sp"
+                        android:textColor="@color/brown"/>
 
                     <CheckBox
                         android:layout_width="wrap_content"
@@ -550,8 +552,10 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="FAILURES: "
-                        android:layout_marginRight="15dp"/>
+                        android:text="FAIL: "
+                        android:layout_marginRight="9dp"
+                        android:textSize="20sp"
+                        android:textColor="@color/brown"/>
 
                     <CheckBox
                         android:layout_width="wrap_content"
