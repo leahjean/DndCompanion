@@ -66,58 +66,58 @@ public class AbilityEditActivity extends Activity implements View.OnClickListene
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.athletics_label:
-                addSimpleTooltip(this, v, tooltipTexts.get("athletics"), Gravity.END);
+                addSimpleTooltip(this, v, tooltipTexts.get("athletics"), Gravity.BOTTOM);
                 break;
             case R.id.acrobatics_label:
-                addSimpleTooltip(this, v, tooltipTexts.get("acrobatics"), Gravity.END);
+                addSimpleTooltip(this, v, tooltipTexts.get("acrobatics"), Gravity.BOTTOM);
                 break;
             case R.id.sleight_of_hand_label:
-                addSimpleTooltip(this, v, tooltipTexts.get("sleight of hand"), Gravity.END);
+                addSimpleTooltip(this, v, tooltipTexts.get("sleight of hand"), Gravity.BOTTOM);
                 break;
             case R.id.stealth_label:
-                addSimpleTooltip(this, v, tooltipTexts.get("stealth"), Gravity.END);
+                addSimpleTooltip(this, v, tooltipTexts.get("stealth"), Gravity.BOTTOM);
                 break;
             case R.id.arcana_label:
-                addSimpleTooltip(this, v, tooltipTexts.get("arcana"), Gravity.END);
+                addSimpleTooltip(this, v, tooltipTexts.get("arcana"), Gravity.BOTTOM);
                 break;
             case R.id.history_label:
-                addSimpleTooltip(this, v, tooltipTexts.get("history"), Gravity.END);
+                addSimpleTooltip(this, v, tooltipTexts.get("history"), Gravity.BOTTOM);
                 break;
             case R.id.investigation_label:
-                addSimpleTooltip(this, v, tooltipTexts.get("investigation"), Gravity.END);
+                addSimpleTooltip(this, v, tooltipTexts.get("investigation"), Gravity.BOTTOM);
                 break;
             case R.id.nature_label:
-                addSimpleTooltip(this, v, tooltipTexts.get("nature"), Gravity.END);
+                addSimpleTooltip(this, v, tooltipTexts.get("nature"), Gravity.BOTTOM);
                 break;
             case R.id.religion_label:
-                addSimpleTooltip(this, v, tooltipTexts.get("religion"), Gravity.END);
+                addSimpleTooltip(this, v, tooltipTexts.get("religion"), Gravity.BOTTOM);
                 break;
             case R.id.animal_handling_label:
-                addSimpleTooltip(this, v, tooltipTexts.get("animal handling"), Gravity.END);
+                addSimpleTooltip(this, v, tooltipTexts.get("animal handling"), Gravity.BOTTOM);
                 break;
             case R.id.insight_label:
-                addSimpleTooltip(this, v, tooltipTexts.get("insight"), Gravity.END);
+                addSimpleTooltip(this, v, tooltipTexts.get("insight"), Gravity.BOTTOM);
                 break;
             case R.id.medicine_label:
-                addSimpleTooltip(this, v, tooltipTexts.get("medicine"), Gravity.END);
+                addSimpleTooltip(this, v, tooltipTexts.get("medicine"), Gravity.BOTTOM);
                 break;
             case R.id.perception_label:
-                addSimpleTooltip(this, v, tooltipTexts.get("perception"), Gravity.END);
+                addSimpleTooltip(this, v, tooltipTexts.get("perception"), Gravity.BOTTOM);
                 break;
             case R.id.survival_label:
-                addSimpleTooltip(this, v, tooltipTexts.get("survival"), Gravity.END);
+                addSimpleTooltip(this, v, tooltipTexts.get("survival"), Gravity.BOTTOM);
                 break;
             case R.id.deception_label:
-                addSimpleTooltip(this, v, tooltipTexts.get("deception"), Gravity.END);
+                addSimpleTooltip(this, v, tooltipTexts.get("deception"), Gravity.BOTTOM);
                 break;
             case R.id.intimidation_label:
-                addSimpleTooltip(this, v, tooltipTexts.get("intimidation"), Gravity.END);
+                addSimpleTooltip(this, v, tooltipTexts.get("intimidation"), Gravity.BOTTOM);
                 break;
             case R.id.performance_label:
-                addSimpleTooltip(this, v, tooltipTexts.get("performance"), Gravity.END);
+                addSimpleTooltip(this, v, tooltipTexts.get("performance"), Gravity.BOTTOM);
                 break;
             case R.id.persuasion_label:
-                addSimpleTooltip(this, v, tooltipTexts.get("persuasion"), Gravity.END);
+                addSimpleTooltip(this, v, tooltipTexts.get("persuasion"), Gravity.BOTTOM);
                 break;
             case R.id.stats_edit_back_page_btn:
                 this.finish();
